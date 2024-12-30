@@ -2,8 +2,6 @@
  *
 
 # Explicitly include directories first
-!diapos/
-!diapos/**/
 !scripts/
 !projets/
 !donnees/
