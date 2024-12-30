@@ -33,3 +33,5 @@ C'est toujours une bonne idée de séparer les données des scripts, voilà pour
 12. Analyse de données : régression logistique
 13. Analyse de données : régression logistique
 14. Révision (b)
+
+Consultez la page du cours sur `monPortail`.
