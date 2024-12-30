@@ -8,9 +8,6 @@
 # Include only specific PDF files in diapos subdirectories
 !diapos/**/LNG*.pdf
 
-# Explicitly ignore everything else in diapos
-diapos/*
-
 # Include specific other directories
 !scripts/
 !projets/
