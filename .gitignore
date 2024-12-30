@@ -9,8 +9,8 @@
 !solutions/**
 
 # Include specific files in diapos
-!diapos/**
-!diapos/**/LNG*.pdf
+#!diapos/**
+#!diapos/**/LNG*.pdf
 
 # Always include these specific files
 !README.md
