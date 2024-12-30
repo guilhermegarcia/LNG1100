@@ -9,7 +9,7 @@
 !solutions/**
 
 # Include specific files in diapos
-!diapos/**
+# !diapos/**
 !diapos/**/LNG*.pdf
 
 # Always include these specific files

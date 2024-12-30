@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: /Users/gdgarcia/Dropbox/Academia/Teaching/Laval/Méthodes/Diapos/1-intro/.texpadtmp/LNG1100-1.aux
+The style file: apalike.bst
+Database file #1: ../../../../../../References/references.bib
+Warning--empty publisher in barnier_R
+Warning--empty publisher in barnier_et_al_R
+You've used 4 entries,
+            1935 wiz_defined-function locations,
+            494 strings with 4726 characters,
+and the built_in function-call counts, 1524 in all, are:
+= -- 130
+> -- 90
+< -- 2
++ -- 32
+- -- 32
+* -- 128
+:= -- 287
+add.period$ -- 13
+call.type$ -- 4
+change.case$ -- 32
+chr.to.int$ -- 4
+cite$ -- 6
+duplicate$ -- 56
+empty$ -- 93
+format.name$ -- 36
+if$ -- 283
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 8
+newline$ -- 24
+num.names$ -- 12
+pop$ -- 43
+preamble$ -- 1
+purify$ -- 36
+quote$ -- 0
+skip$ -- 39
+stack$ -- 0
+substring$ -- 48
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 16
+warning$ -- 2
+while$ -- 8
+width$ -- 0
+write$ -- 54
+(There were 2 warnings)
