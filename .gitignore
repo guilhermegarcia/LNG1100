@@ -1,17 +1,24 @@
 # Ignore everything by default
- *
+*
 
-# Explicitly include directories first
+# Allow Git to see the diapos directory and subdirectories
+!diapos/
+!diapos/**/
+
+# Include only specific PDF files in diapos subdirectories
+!diapos/**/LNG*.pdf
+
+# Explicitly ignore everything else in diapos
+diapos/*
+
+# Include specific other directories
 !scripts/
 !projets/
 !donnees/
 !solutions/
 !solutions/**
 
-# Include specific files in diapos
-!diapos/**/LNG*.pdf
-
-# Always include these specific files
+# Always include specific files
 !README.md
 !project.Rproj
 
