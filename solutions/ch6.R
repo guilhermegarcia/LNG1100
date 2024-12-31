@@ -1,3 +1,4 @@
+rm(list=ls()) # Vider l'environnement
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 1
 ## Partie I : note ~ ville ===================
@@ -20,8 +21,8 @@ ggplot(data = villes, aes(x = ville, y = note)) +
          subtitle = "Calgary vs. Montréal vs. Québec")
 
 # Le modèle :
-modele_ville = lm(note ~ ville, data = villes)
-summary(modele_ville)
+fit1 = lm(note ~ ville, data = villes)
+summary(fit1)
 
 # La figure suggère une différence de note moyenne entre les ville. En plus, 
 # l'erreur standard de Calgary est clairement plus élevé que celles de 
@@ -51,8 +52,8 @@ ggplot(data = villes, aes(x = duree, y = note)) +
     labs(title = "Relation entre note et temps d'étude")
 
 # Le modèle :
-modele_duree = lm(note ~ duree, data = villes)
-summary(modele_duree)
+fit2 = lm(note ~ duree, data = villes)
+summary(fit2)
 
 # Interprétation. Le modèle confirme un effet statistiquement significatif 
 # de la variable `duree` sur les notes (β̂ = 0.17, IC 95 % = [0.03, 0.31], 
@@ -86,8 +87,8 @@ ggplot(data = villes, aes(x = duree, y = note)) +
 # exécutons notre régression pour vérifier les effets en question.
 
 # Le modèle :
-modele_ville_duree = lm(note ~ ville + duree, data = villes)
-summary(modele_ville_duree)
+fit3 = lm(note ~ ville + duree, data = villes)
+summary(fit3)
 
 # Interprétation. Le modèle confirme un effet statistiquement significatif 
 # de la variable `ville`, mais l'effet de la variable `duree` n'est plus 
@@ -121,3 +122,4 @@ ggplot(villes, aes(x = duree, y = note)) +
     coord_cartesian(ylim = c(0, 100)) +
     theme(plot.title = ggtext::element_markdown(),
           plot.subtitle = ggtext::element_markdown())
+

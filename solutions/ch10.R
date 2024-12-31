@@ -1,12 +1,13 @@
+rm(list=ls()) # Vider l'environnement
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 1
 # Le fichier utilise le point-virgule pour
 # séparer les colonnes, donc on utilise read_csv2() :
 library(tidyverse)
 library(janitor)
-# Les exercices ici dépand du fichier
-# questionnaire2.csv, qui est disponible à 
-# partir de ce chapitre (ch 10).
+# Les exercices ici dépendent du fichier
+# questionnaire2.csv, qui sera disponible à 
+# partir du chapitre 10.
 # Vérifiez si le fichier csv est importé
 # correctement :
 q2 = read_csv2("donnees/questionnaire2.csv")

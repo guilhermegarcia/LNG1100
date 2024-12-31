@@ -1,3 +1,4 @@
+rm(list=ls()) # Vider l'environnement
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 1
 # On commence par le nettoyage à partir du
@@ -14,7 +15,7 @@ ggplot(data = long, aes(x = langues, y = correct)) +
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 2
 fit1 = glm(correct ~ langues, data = long, family = "binomial")
-
+summary(fit1)
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 3
@@ -23,6 +24,7 @@ fit1 = glm(correct ~ langues, data = long, family = "binomial")
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 4
 fit2 = glm(correct ~ langues + geo, data = long, family = "binomial")
+summary(fit2)
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 5

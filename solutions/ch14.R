@@ -1,3 +1,4 @@
+rm(list=ls()) # Vider l'environnement
 # PRATIQUE FINALE
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -63,6 +64,7 @@ ggplot(data = phon, aes(x = Condition, y = Diff)) +
 # b.
 # Voici le modèle :
 fit1 = lm(Diff ~ L1 + Compétence + Condition, data = phon)
+summary(fit1)
 # Coefficients:
 #                     Estimate Std. Error t value Pr(>|t|)    
 # (Intercept)           4.7339     0.7381   6.414 1.88e-09 ***
@@ -88,8 +90,9 @@ fit1 = lm(Diff ~ L1 + Compétence + Condition, data = phon)
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 5
 # a.
-fit2 = glm(Survived ~ Class + Sex + Age, data = Titanic, family = "binomial")
-
+titanic = read_csv("donnees/titanic.csv")
+fit2 = glm(Survived ~ Class + Sex + Age, data = titanic, family = "binomial")
+summary(fit2)
 # b.
 # Homme, 2e classe, adulte ~ 20 %
 predict(fit2, newdata = tibble(Sex = "Male", 
@@ -112,7 +115,7 @@ newdata = expand.grid(Class = c("1st", "2nd", "3rd", "Crew"),
   as_tibble()
 
 # Vérifiez newdata maintenant :
- newdata
+newdata
 
 # Ensuite, on utilise ce tableau dans la fonction
 # predict() :

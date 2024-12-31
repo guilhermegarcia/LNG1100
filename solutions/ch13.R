@@ -1,3 +1,4 @@
+rm(list=ls()) # Vider l'environnement
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 1
 library(tidyverse)
@@ -90,7 +91,7 @@ ggplot(data = fb, aes(y = Note, x = Recast |> as_factor())) +
 
 # Finalement, notre modèle :
 fit4 = glm(Recast ~ Note, data = fb, family = "binomial")
-
+summary(fit4)
 # La réponse :
 predict(fit4, newdata = tibble(Note = 90), type = "response")
 # Oui, P(recast = 1 | note = 90) = 0.62

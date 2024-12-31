@@ -1,3 +1,4 @@
+rm(list=ls()) # Vider l'environnement
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 1
 # Tout d'abord, on a besoin de la version

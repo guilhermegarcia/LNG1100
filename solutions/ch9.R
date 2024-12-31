@@ -1,3 +1,4 @@
+rm(list=ls()) # Vider l'environnement
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 1
 # Oui, les deux analyses sont directement comparables.
@@ -48,3 +49,4 @@ TukeyHSD(fit1)
 # ci-dessus, étant données la similarité des modèles examinés ici). 
 
 # Les questions 5-9 portent sur le projet et vos documents Quarto.
+
