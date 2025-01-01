@@ -30,5 +30,5 @@ summary(fit2)
 # Question 5
 predict(fit2,
         newdata = tibble(langues = c("Oui", "Non"),
-    					 geo = c("Non", "Non")),
+                         geo = c("Non", "Non")),
         type = "response")	

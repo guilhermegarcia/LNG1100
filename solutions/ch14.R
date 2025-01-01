@@ -43,14 +43,14 @@ load("donnees/phonetique.RData")
 # Il faut calculer l'amélioration à partir des tests.
 # Donc, on commence par une nouvelle colonne :
 phon = phon |> 
-	mutate(Diff = Post - Pre)
+  mutate(Diff = Post - Pre)
 # Cette colonne quantifie la différence entre les tests.
 # Effectivement, elle nous donne l'apprentissage des
 # participants.
 ggplot(data = phon, aes(x = Condition, y = Diff)) + 
-	stat_summary() + 
-	stat_summary(geom = "bar", alpha = 0.3, color = "black") + 
-	facet_grid(Compétence ~ L1)
+  stat_summary() + 
+  stat_summary(geom = "bar", alpha = 0.3, color = "black") + 
+  facet_grid(Compétence ~ L1)
 # Vous verrez qu'il est plus facile de visualiser les patrons
 # si on ajoute des barres. Veuillez noter que les langues
 # sont ordonnées « danois, portugais, espagnol ». Cette ordre
@@ -96,22 +96,22 @@ summary(fit2)
 # b.
 # Homme, 2e classe, adulte ~ 20 %
 predict(fit2, newdata = tibble(Sex = "Male", 
-	                           Class = "2nd", 
-	                           Age = "Adult"), 
-		type = "response")
+                               Class = "2nd", 
+                               Age = "Adult"), 
+        type = "response")
 
 # Femme, 2e classe, adulte ~ 73 %
 predict(fit2, newdata = tibble(Sex = "Female", 
-	                           Class = "2nd", 
-	                           Age = "Adult"), 
-		type = "response")
+                               Class = "2nd", 
+                               Age = "Adult"), 
+        type = "response")
 
 # c.
 # Voici une façon de créer un tableau
 # avec toutes les combinaisons dans nos données :
 newdata = expand.grid(Class = c("1st", "2nd", "3rd", "Crew"),
-                              Sex = rep(c("Male", "Female")),
-                              Age = c("Child", "Adult")) |> 
+                      Sex = rep(c("Male", "Female")),
+                      Age = c("Child", "Adult")) |> 
   as_tibble()
 
 # Vérifiez newdata maintenant :

@@ -5,17 +5,17 @@ library(tidyverse)
 ang = read_csv("donnees/anglais.csv")
 ang
 ang = ang |> 
-	mutate(TRms = exp(TR))
+  mutate(TRms = exp(TR))
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 2
 ggplot(data = ang, aes(x = TR)) + 
-	geom_histogram() +
-	labs(title = "Log TR")
+  geom_histogram() +
+  labs(title = "Log TR")
 
 ggplot(data = ang, aes(x = TRms)) + 
-	geom_histogram() + 
-	labs(title = "TR millisecondes")
+  geom_histogram() + 
+  labs(title = "TR millisecondes")
 
 # La distribution de TRms est moins normale,
 # c'est-à-dire moins symétrique,
@@ -25,9 +25,9 @@ ggplot(data = ang, aes(x = TRms)) +
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 3
 ggplot(data = ang, aes(x = Age, y = TR)) + 
-	geom_boxplot() +
-	stat_summary(color = "red") + 
-	geom_smooth(method = "lm")
+  geom_boxplot() +
+  stat_summary(color = "red") + 
+  geom_smooth(method = "lm")
 # Oui : il y a un effet très clair. Les participants
 # jeunes sont plus rapides.
 
@@ -39,8 +39,8 @@ summary(fit1)
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 4
 ggplot(data = ang, aes(x = Familiarite, y = TR)) + 
-	geom_point() + 
-	geom_smooth(method = "lm")
+  geom_point() + 
+  geom_smooth(method = "lm")
 # Oui : il y a un effet très clair. Plus un mot est
 # familier, plus le temps de réaction est rapide.
 
@@ -57,8 +57,8 @@ summary(fit2)
 # Donc, on utilise les coulers pour les groupes d'âge
 # et l'axe x pour la variable continue Familiarite
 ggplot(data = ang, aes(x = Familiarite, y = TR, color = Age)) + 
-	geom_point() + 
-	geom_smooth(method = "lm")
+  geom_point() + 
+  geom_smooth(method = "lm")
 
 # Si deux variables ont un effet, il faut vérifier si
 # ces effets sont toujours là lorsqu'on considère un
@@ -85,7 +85,7 @@ confint(fit3)
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 7
 ang = ang |> 
-	mutate(Fam_cat = ntile(Familiarite, n = 4) |> as_factor())
+  mutate(Fam_cat = ntile(Familiarite, n = 4) |> as_factor())
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 8
@@ -97,8 +97,8 @@ fit4 = lm(TR ~ Age + Fam_cat, data = ang)
 # Tout d'abord, il convient de noter que l'effet de Familiarite
 # est a peu près linéaire dans une figure :
 ggplot(data = ang, aes(x = Familiarite, y = TR)) +
- 	geom_point() + 
- 	geom_smooth()
+  geom_point() + 
+  geom_smooth()
 
 # On n'a pas donc de raisons pour modifier la classe de
 # la variable continue en question. En plus, lorsqu'on 

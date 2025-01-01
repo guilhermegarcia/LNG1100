@@ -7,18 +7,18 @@ villes = read_csv("donnees/villes2.csv")
 
 # Les moyennes et les écarts-types :
 villes |> 
-    group_by(ville) |> 
-    summarize(M = mean(note),
-              ET = sd(note))
+  group_by(ville) |> 
+  summarize(M = mean(note),
+            ET = sd(note))
 
 # Figure :
 ggplot(data = villes, aes(x = ville, y = note)) + 
-    stat_summary() +
-    labs(x = "Ville", 
-         y = "Note") +
-    theme_minimal(base_size = 13) +
-    labs(title = "Moyennes + barres d'erreurs",
-         subtitle = "Calgary vs. Montréal vs. Québec")
+  stat_summary() +
+  labs(x = "Ville", 
+       y = "Note") +
+  theme_minimal(base_size = 13) +
+  labs(title = "Moyennes + barres d'erreurs",
+       subtitle = "Calgary vs. Montréal vs. Québec")
 
 # Le modèle :
 fit1 = lm(note ~ ville, data = villes)
@@ -44,12 +44,12 @@ summary(fit1)
 ## Partie I : note ~ duree ===================
 # Figure :
 ggplot(data = villes, aes(x = duree, y = note)) + 
-    geom_point(alpha = 0.25, size = 4, color = "darkviolet") +
-    geom_smooth(method = "lm") +
-    labs(x = "Temps d'étude du français (en mois)", 
-         y = "Note") +
-    theme_minimal(base_size = 13) +
-    labs(title = "Relation entre note et temps d'étude")
+  geom_point(alpha = 0.25, size = 4, color = "darkviolet") +
+  geom_smooth(method = "lm") +
+  labs(x = "Temps d'étude du français (en mois)", 
+       y = "Note") +
+  theme_minimal(base_size = 13) +
+  labs(title = "Relation entre note et temps d'étude")
 
 # Le modèle :
 fit2 = lm(note ~ duree, data = villes)
@@ -70,14 +70,14 @@ summary(fit2)
 # Question 2
 # Figure :
 ggplot(data = villes, aes(x = duree, y = note)) + 
-    geom_point(size = 3, alpha = 0.25, color = "darkviolet") +
-    geom_smooth(method = "lm") + 
-    facet_grid(~ville) + 
-    labs(x = "Temps d'étude du français (en mois)", 
-         y = "Note") +
-    theme_minimal(base_size = 11) +
-    labs(title = "Temps d'étude + ville",
-         subtitle = "Calgary vs. Montréal vs. Québec")
+  geom_point(size = 3, alpha = 0.25, color = "darkviolet") +
+  geom_smooth(method = "lm") + 
+  facet_grid(~ville) + 
+  labs(x = "Temps d'étude du français (en mois)", 
+       y = "Note") +
+  theme_minimal(base_size = 11) +
+  labs(title = "Temps d'étude + ville",
+       subtitle = "Calgary vs. Montréal vs. Québec")
 
 # Avant d'exécuter notre régression, examinez attentivement la figure. 
 # Une fois que les variables `ville` et `duree` sont visualisées ensemble, 
@@ -111,15 +111,15 @@ summary(fit3)
 # graphique sera approprié pour les données examinées. L'objectif doit être 
 # la communication efficace. Voici le code pour générer la figure.
 ggplot(villes, aes(x = duree, y = note)) + 
-    stat_smooth(method = "lm") +
-    geom_point(size = 4, alpha = 0.5, aes(color = ville)) +
-    coord_cartesian(xlim = c(0, 60)) + 
-    labs(x = "Temps d'étude du français (en mois)",
-         y = "Note",
-         color = "Ville:",
-         title = "Les notes des trois groupes") + 
-    theme_minimal(base_size = 12) + 
-    coord_cartesian(ylim = c(0, 100)) +
-    theme(plot.title = ggtext::element_markdown(),
-          plot.subtitle = ggtext::element_markdown())
+  stat_smooth(method = "lm") +
+  geom_point(size = 4, alpha = 0.5, aes(color = ville)) +
+  coord_cartesian(xlim = c(0, 60)) + 
+  labs(x = "Temps d'étude du français (en mois)",
+       y = "Note",
+       color = "Ville:",
+       title = "Les notes des trois groupes") + 
+  theme_minimal(base_size = 12) + 
+  coord_cartesian(ylim = c(0, 100)) +
+  theme(plot.title = ggtext::element_markdown(),
+        plot.subtitle = ggtext::element_markdown())
 

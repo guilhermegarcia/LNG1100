@@ -5,29 +5,29 @@ rm(list=ls()) # Vider l'environnement
 # nettoyée des données :
 source("solutions/ch10.R")
 long |> 
-	summarize(precision = mean(correct, na.rm = TRUE), 
-			  .by = langues)
+  summarize(precision = mean(correct, na.rm = TRUE), 
+            .by = langues)
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 2
 long |> 
-	summarize(precision = mean(correct, na.rm = TRUE), 
-			  .by = geo)
+  summarize(precision = mean(correct, na.rm = TRUE), 
+            .by = geo)
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 3
 long |> 
-	filter(id %in% c(4, 7, 14, 15, 17)) |> 
-	summarize(Precision = mean(correct, na.rm = TRUE))
+  filter(id %in% c(4, 7, 14, 15, 17)) |> 
+  summarize(Precision = mean(correct, na.rm = TRUE))
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 4
 long = long |> 
-	mutate(geo_lang = if_else(geo == "Oui" & langues == "Oui", "Oui", "Non"))
+  mutate(geo_lang = if_else(geo == "Oui" & langues == "Oui", "Oui", "Non"))
 
 long |> 
-	summarize(precision = mean(correct, na.rm = TRUE), 
-		 	  .by = geo_lang)
+  summarize(precision = mean(correct, na.rm = TRUE), 
+            .by = geo_lang)
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 5
@@ -45,5 +45,5 @@ long |>
 # que la figure calcule les erreurs standards : dans une variable
 # non normale, ces erreurs sont moins fiables. 
 # Il y a d'autres figures qui pourraient être utiles ici :
-	# a. la performance individuelle de chaque participant
-	# b. la performance générale selon chaque question
+# a. la performance individuelle de chaque participant
+# b. la performance générale selon chaque question

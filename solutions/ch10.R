@@ -66,23 +66,23 @@ long = long |>
 # write_csv(long, file = "scripts/q2_nettoye.csv")
 # Le fichier sera nécessaire pour les exercices
 # du chapitre 11, donc vous pouvez :
-  # a) utiliser source() dans ce script
-  # b) exporter le csv nettoyé pour l'importer plus tard
+# a) utiliser source() dans ce script
+# b) exporter le csv nettoyé pour l'importer plus tard
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 2
 long |> 
-	summarize(Score = mean(correct, na.rm = TRUE), .by = id)
+  summarize(Score = mean(correct, na.rm = TRUE), .by = id)
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 3
 long |> 
-	summarize(Score = mean(correct, na.rm = TRUE), .by = geo)
+  summarize(Score = mean(correct, na.rm = TRUE), .by = geo)
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 4
 # Voici une figure sur la relation entre la connaissance
 # d'autres langues et la performance dans le questionnaire :
 ggplot(data = long, aes(x = langues, y = correct)) + 
-	stat_summary()
+  stat_summary()
 # C'est une figure très simple : vous pouvez l'améliorer, naturellement!

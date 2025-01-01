@@ -4,7 +4,7 @@ rm(list=ls()) # Vider l'environnement
 library(tidyverse)
 villes = read_csv("donnees/villes2.csv")
 qc_mtl = villes |>
-	filter(ville != "Calgary")
+  filter(ville != "Calgary")
 
 t.test(note ~ ville, data = qc_mtl)
 # Le test confirme un effet significatif de `ville` (p < 0,05), 
@@ -23,11 +23,11 @@ t.test(note ~ ville, data = qc_mtl)
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 2
 notes_80 = villes |> 
-	filter(note > 80)
+  filter(note > 80)
 
 analyse = aov(note ~ ville, data = notes_80)
 analyse |> 
-	TukeyHSD()
+  TukeyHSD()
 
 # Les résultats sont très différents, vu que, maintenant
 # il n'y a aucune différence significative. L'effet est
