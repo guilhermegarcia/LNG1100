@@ -20,17 +20,16 @@ C'est toujours une bonne idée de séparer les données des scripts, voilà pour
 
 1. Introduction
 2. Question de recherche; introduction à R
-3. Exploration (a)
+3. Exploration
 4. Analyse : test _t_
 5. Analyse : ANOVA
 6. Analyse : régression linéaire
 7. Analyse : régression linéaire
 8. Communication des résultats : quarto
 9. **Révision (a)**
-10. Nettoyage
-11. Exploration (b)
+10. Nettoyage et exploration
+11. Analyse : régression logistique
 12. Analyse : régression logistique
-13. Analyse : régression logistique + **révision (b)**
-14. **Examen**
+13. **Examen**
 
 Consultez les informations sur les évaluations du cours sur `monPortail`.
