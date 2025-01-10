@@ -30,6 +30,7 @@ C'est toujours une bonne idée de séparer les données des scripts, voilà pour
 10. Nettoyage et exploration
 11. Analyse : régression logistique
 12. Analyse : régression logistique
-13. **Examen**
+13. Révision (b)
+14. **Examen**
 
 Consultez les informations sur les évaluations du cours sur `monPortail`.
