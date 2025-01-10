@@ -1,10 +1,10 @@
 rm(list = ls()) # Vider l'environnement
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 1
-mesNombres <- c(5, 10, 15, 20, 25, 30, 35, 40, 45, 50)
+mesNombres = c(5, 10, 15, 20, 25, 30, 35, 40, 45, 50)
 
 # Voici une alternative plus élégante :
-mesNombres <- seq(from = 5, to = 50, by = 5)
+mesNombres = seq(from = 5, to = 50, by = 5)
 # Combien d'éléments a-t-on dans l'objet en question?
 # Connaissez-vous une fonction qui trouve la réponse?
 length(mesNombres)
@@ -15,12 +15,12 @@ class(mesNombres)
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 2
-villes <- c("Québec", "Montréal", "Paris", "Lisbonne")
+villes = c("Québec", "Montréal", "Paris", "Lisbonne")
 class(villes)
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 3
-villesNombres <- c("Québec", 23, "Montréal", 3)
+villesNombres = c("Québec", 23, "Montréal", 3)
 class(villesNombres)
 # La classe sera « character » (chr)
 # Un vecteur contient des éléments d'une seule classe
@@ -29,8 +29,8 @@ class(villesNombres)
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 4
-moyenne <- mean(mesNombres)
-et <- sd(mesNombres)
+moyenne = mean(mesNombres)
+et = sd(mesNombres)
 # Bien que la moyenne soit informative,
 # il faut connaître aussi le niveau de dispersion
 # des données. Par exemple, le vecteur
@@ -39,7 +39,7 @@ et <- sd(mesNombres)
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 5
-langues <- c("français", "anglais", "espagnol", "allemand")
+langues = c("français", "anglais", "espagnol", "allemand")
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 6
@@ -51,7 +51,7 @@ sort(langues)
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 8
-langues <- sort(langues)
+langues = sort(langues)
 
 # Cette commande changera l'ordre de
 # l'objet original (remplacement)
@@ -73,7 +73,7 @@ langues
 # Question 11
 # Voici le tableau long créé dans le chapitre :
 library(tidyverse)
-long <- tribble(
+long = tribble(
   ~id, ~cours, ~note,
   "PLK", "phonologie", 80,
   "PLK", "syntaxe", 55,
@@ -99,14 +99,14 @@ long |>
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 12
-long <- long |>
+long = long |>
   mutate(dist = 100 - note)
 
 long
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 13
-notes_sup <- long |>
+notes_sup = long |>
   filter(note > 70)
 
 notes_sup
@@ -121,7 +121,7 @@ long |>
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 15
-donnees <- read_csv("donnees/sampleData.csv")
+donnees = read_csv("donnees/sampleData.csv")
 
 donnees
 
@@ -133,7 +133,7 @@ donnees
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 17
 # C'est plus facile de travailler avec un tableau long
-donnees_long <- donnees |>
+donnees_long = donnees |>
   pivot_longer(
     names_to = "test",
     values_to = "note",
@@ -156,14 +156,14 @@ donnees_long |>
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 19
-donnees_long <- donnees_long |>
+donnees_long = donnees_long |>
   mutate(note_carree = note^2)
 
 donnees_long
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 20
-bonnes_notes <- donnees_long |>
+bonnes_notes = donnees_long |>
   filter(note >= 7)
 
 bonnes_notes

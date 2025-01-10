@@ -19,7 +19,7 @@ rm(list=ls()) # Vider l'environnement
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 2
-# Facteur A = 3; facteur B = 2. Observations 
+# Facteur A = 3; facteur B = 2. Observations
 # totales = 92 + 3 + 2 = 97
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -42,14 +42,14 @@ load("donnees/phonetique.RData")
 # a.
 # Il faut calculer l'amélioration à partir des tests.
 # Donc, on commence par une nouvelle colonne :
-phon = phon |> 
+phon = phon |>
   mutate(Diff = Post - Pre)
 # Cette colonne quantifie la différence entre les tests.
 # Effectivement, elle nous donne l'apprentissage des
 # participants.
-ggplot(data = phon, aes(x = Condition, y = Diff)) + 
-  stat_summary() + 
-  stat_summary(geom = "bar", alpha = 0.3, color = "black") + 
+ggplot(data = phon, aes(x = Condition, y = Diff)) +
+  stat_summary() +
+  stat_summary(geom = "bar", alpha = 0.3, color = "black") +
   facet_grid(Compétence ~ L1)
 # Vous verrez qu'il est plus facile de visualiser les patrons
 # si on ajoute des barres. Veuillez noter que les langues
@@ -66,11 +66,11 @@ ggplot(data = phon, aes(x = Condition, y = Diff)) +
 fit1 = lm(Diff ~ L1 + Compétence + Condition, data = phon)
 summary(fit1)
 # Coefficients:
-#                     Estimate Std. Error t value Pr(>|t|)    
+#                     Estimate Std. Error t value Pr(>|t|)
 # (Intercept)           4.7339     0.7381   6.414 1.88e-09 ***
-# L1portugais           0.8588     0.7614   1.128    0.261    
+# L1portugais           0.8588     0.7614   1.128    0.261
 # L1espagnol           -4.6410     0.7641  -6.074 1.04e-08 ***
-# CompétenceAdv         1.3500     0.6234   2.166    0.032 *  
+# CompétenceAdv         1.3500     0.6234   2.166    0.032 *
 # Conditionphonétique   7.7557     0.6318  12.275  < 2e-16 ***
 
 # confint(fit1)
@@ -83,7 +83,7 @@ summary(fit1)
 
 # La méthode a un effet clair (β̂ = 7,75, IC à 95 % = [6,5 9], p < 0,0001).
 # Examinez les autres effets dans le modèle. Veuillez noter
-# que dans notre cours on ignore les interactions. 
+# que dans notre cours on ignore les interactions.
 # Vous pouvez comparer le coefficient de détermination du
 # modèle en question avec celui d'un modèle sans L1, par exemple.
 
@@ -95,23 +95,33 @@ fit2 = glm(Survived ~ Class + Sex + Age, data = titanic, family = "binomial")
 summary(fit2)
 # b.
 # Homme, 2e classe, adulte ~ 20 %
-predict(fit2, newdata = tibble(Sex = "Male", 
-                               Class = "2nd", 
-                               Age = "Adult"), 
-        type = "response")
+predict(fit2,
+  newdata = tibble(
+    Sex = "Male",
+    Class = "2nd",
+    Age = "Adult"
+  ),
+  type = "response"
+)
 
 # Femme, 2e classe, adulte ~ 73 %
-predict(fit2, newdata = tibble(Sex = "Female", 
-                               Class = "2nd", 
-                               Age = "Adult"), 
-        type = "response")
+predict(fit2,
+  newdata = tibble(
+    Sex = "Female",
+    Class = "2nd",
+    Age = "Adult"
+  ),
+  type = "response"
+)
 
 # c.
 # Voici une façon de créer un tableau
 # avec toutes les combinaisons dans nos données :
-newdata = expand.grid(Class = c("1st", "2nd", "3rd", "Crew"),
-                      Sex = rep(c("Male", "Female")),
-                      Age = c("Child", "Adult")) |> 
+newdata = expand.grid(
+  Class = c("1st", "2nd", "3rd", "Crew"),
+  Sex = rep(c("Male", "Female")),
+  Age = c("Child", "Adult")
+) |>
   as_tibble()
 
 # Vérifiez newdata maintenant :
@@ -119,7 +129,7 @@ newdata
 
 # Ensuite, on utilise ce tableau dans la fonction
 # predict() :
-newdata = newdata |> 
+newdata = newdata |>
   mutate(pred = predict(fit2, newdata, type = "response"))
 
 # Finalement, on ordonne les résultats selon la probabilité
