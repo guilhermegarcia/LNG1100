@@ -4,7 +4,7 @@
 
 # La structure d'un script typique : les fichiers .R
 
-# Création des variables : = OU <-
+# Création des variables : = OU <- (Option -)
 
 
 # Les objets les plus importants
