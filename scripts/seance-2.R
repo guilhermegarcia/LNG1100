@@ -1,5 +1,5 @@
 # Séance 2
-#
+# Commentaires avec un # (Cmd/Ctrl+Shift+C)
 # Notre itinéraire aujourd'hui :
 
 # La structure d'un script typique : les fichiers .R
