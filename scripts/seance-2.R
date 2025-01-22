@@ -1,5 +1,13 @@
-# Séance 2
+# Séance 2 - Introduction au language R
 # Commentaires avec un # (Cmd/Ctrl+Shift+C)
+# Préambule
+# Importer nos extensions :
+library(tidyverse)
+
+# Pour installer une extension (juste une fois) :
+# install.packages("tidyverse")
+
+# Exemple de commande :
 # Notre itinéraire aujourd'hui :
 
 # La structure d'un script typique : les fichiers .R
