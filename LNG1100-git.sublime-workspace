@@ -1,0 +1,1058 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"frame",
+				"frametitle"
+			],
+			[
+				"beta",
+				"beta-hat-β̂"
+			],
+			[
+				"fti",
+				"fit3"
+			],
+			[
+				"modele_vi",
+				"modele_ville_duree"
+			],
+			[
+				"bet",
+				"beta-hat-β̂"
+			],
+			[
+				"E",
+				"E-ɛ"
+			],
+			[
+				"T",
+				"T-θ"
+			],
+			[
+				"a",
+				"A-ɑ"
+			],
+			[
+				"ts",
+				"ts-t͡s"
+			],
+			[
+				"l",
+				"syl\tsyl"
+			],
+			[
+				"sch",
+				"schwa-ə"
+			],
+			[
+				"ah",
+				"beta-hat-β̂"
+			],
+			[
+				"syl",
+				"syl\tsyl"
+			],
+			[
+				"n",
+				"N-ŋ"
+			],
+			[
+				"t",
+				"ts-t͡s"
+			],
+			[
+				"d",
+				"dZ-d͡ʒ"
+			],
+			[
+				"i",
+				"I-ɪ"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 1254,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": " +"
+					},
+					"AgAAACwFAAAAAAAALQUAAAAAAAAAAAAALQUAAAAAAAAuBQAAAAAAAAAAAAA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAsBQAAAAAAACwFAAAAAAAA////////738"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": " r"
+					},
+					"AgAAAC4FAAAAAAAALwUAAAAAAAAAAAAALwUAAAAAAAAwBQAAAAAAAAAAAAA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAuBQAAAAAAAC4FAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					8,
+					1,
+					"",
+					null,
+					"AQAAADAFAAAAAAAAMQUAAAAAAAAAAAAA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAwBQAAAAAAADAFAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					9,
+					1,
+					"",
+					null,
+					"AQAAADAFAAAAAAAAMAUAAAAAAAACAAAAwrQ",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAxBQAAAAAAADEFAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": "évbis"
+					},
+					"BQAAADAFAAAAAAAAMQUAAAAAAAAAAAAAMQUAAAAAAAAyBQAAAAAAAAAAAAAyBQAAAAAAADMFAAAAAAAAAAAAADMFAAAAAAAANAUAAAAAAAAAAAAANAUAAAAAAAA1BQAAAAAAAAAAAAA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAwBQAAAAAAADAFAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					11,
+					3,
+					"left_delete",
+					null,
+					"AwAAADQFAAAAAAAANAUAAAAAAAABAAAAczMFAAAAAAAAMwUAAAAAAAABAAAAaTIFAAAAAAAAMgUAAAAAAAABAAAAYg",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA1BQAAAAAAADUFAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": "ision"
+					},
+					"BQAAADIFAAAAAAAAMwUAAAAAAAAAAAAAMwUAAAAAAAA0BQAAAAAAAAAAAAA0BQAAAAAAADUFAAAAAAAAAAAAADUFAAAAAAAANgUAAAAAAAAAAAAANgUAAAAAAAA3BQAAAAAAAAAAAAA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAyBQAAAAAAADIFAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": " finale"
+					},
+					"BwAAADcFAAAAAAAAOAUAAAAAAAAAAAAAOAUAAAAAAAA5BQAAAAAAAAAAAAA5BQAAAAAAADoFAAAAAAAAAAAAADoFAAAAAAAAOwUAAAAAAAAAAAAAOwUAAAAAAAA8BQAAAAAAAAAAAAA8BQAAAAAAAD0FAAAAAAAAAAAAAD0FAAAAAAAAPgUAAAAAAAAAAAAA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA3BQAAAAAAADcFAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					15,
+					4,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"BAAAAE4FAAAAAAAATgUAAAAAAAABAAAAKU0FAAAAAAAATQUAAAAAAAABAAAAYkwFAAAAAAAATAUAAAAAAAABAAAAKEMFAAAAAAAAQwUAAAAAAAAKAAAAUsOpdmlzaW9uIA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABPBQAAAAAAAE8FAAAAAAAAAAAAAACYhUA"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "Examen"
+					},
+					"BgAAAEMFAAAAAAAARAUAAAAAAAAAAAAARAUAAAAAAABFBQAAAAAAAAAAAABFBQAAAAAAAEYFAAAAAAAAAAAAAEYFAAAAAAAARwUAAAAAAAAAAAAARwUAAAAAAABIBQAAAAAAAAAAAABIBQAAAAAAAEkFAAAAAAAAAAAAAA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABDBQAAAAAAAEMFAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					19,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAADgFAAAAAAAAOAUAAAAAAAAGAAAAZmluYWxl",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA+BQAAAAAAAD4FAAAAAAAA////////738"
+				],
+				[
+					20,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAADgFAAAAAAAAOgUAAAAAAAAAAAAA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA4BQAAAAAAADgFAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": "b"
+					},
+					"AQAAADkFAAAAAAAAOgUAAAAAAAAAAAAA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA5BQAAAAAAADkFAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					29,
+					11,
+					"left_delete",
+					null,
+					"CwAAANwDAAAAAAAA3AMAAAAAAAABAAAAc9sDAAAAAAAA2wMAAAAAAAABAAAAZdoDAAAAAAAA2gMAAAAAAAACAAAAw6nZAwAAAAAAANkDAAAAAAAAAQAAAG7YAwAAAAAAANgDAAAAAAAAAQAAAG7XAwAAAAAAANcDAAAAAAAAAQAAAG/WAwAAAAAAANYDAAAAAAAAAQAAAGTVAwAAAAAAANUDAAAAAAAAAQAAACDUAwAAAAAAANQDAAAAAAAAAQAAAGXTAwAAAAAAANMDAAAAAAAAAQAAAGTSAwAAAAAAANIDAAAAAAAAAQAAACA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADdAwAAAAAAAN0DAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					31,
+					11,
+					"right_delete",
+					null,
+					"CwAAAOgDAAAAAAAA6AMAAAAAAAABAAAAIOgDAAAAAAAA6AMAAAAAAAABAAAAZOgDAAAAAAAA6AMAAAAAAAABAAAAZegDAAAAAAAA6AMAAAAAAAABAAAAIOgDAAAAAAAA6AMAAAAAAAABAAAAZOgDAAAAAAAA6AMAAAAAAAABAAAAb+gDAAAAAAAA6AMAAAAAAAABAAAAbugDAAAAAAAA6AMAAAAAAAABAAAAbugDAAAAAAAA6AMAAAAAAAACAAAAw6noAwAAAAAAAOgDAAAAAAAAAQAAAGXoAwAAAAAAAOgDAAAAAAAAAQAAAHM",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADoAwAAAAAAAOgDAAAAAAAAAAAAAAAAW0A"
+				],
+				[
+					33,
+					11,
+					"right_delete",
+					null,
+					"CwAAAPsDAAAAAAAA+wMAAAAAAAABAAAAIPsDAAAAAAAA+wMAAAAAAAABAAAAZPsDAAAAAAAA+wMAAAAAAAABAAAAZfsDAAAAAAAA+wMAAAAAAAABAAAAIPsDAAAAAAAA+wMAAAAAAAABAAAAZPsDAAAAAAAA+wMAAAAAAAABAAAAb/sDAAAAAAAA+wMAAAAAAAABAAAAbvsDAAAAAAAA+wMAAAAAAAABAAAAbvsDAAAAAAAA+wMAAAAAAAACAAAAw6n7AwAAAAAAAPsDAAAAAAAAAQAAAGX7AwAAAAAAAPsDAAAAAAAAAQAAAHM",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD7AwAAAAAAAPsDAAAAAAAAAAAAAAAAW0A"
+				],
+				[
+					35,
+					11,
+					"right_delete",
+					null,
+					"CwAAABwEAAAAAAAAHAQAAAAAAAABAAAAIBwEAAAAAAAAHAQAAAAAAAABAAAAZBwEAAAAAAAAHAQAAAAAAAABAAAAZRwEAAAAAAAAHAQAAAAAAAABAAAAIBwEAAAAAAAAHAQAAAAAAAABAAAAZBwEAAAAAAAAHAQAAAAAAAABAAAAbxwEAAAAAAAAHAQAAAAAAAABAAAAbhwEAAAAAAAAHAQAAAAAAAABAAAAbhwEAAAAAAAAHAQAAAAAAAACAAAAw6kcBAAAAAAAABwEAAAAAAAAAQAAAGUcBAAAAAAAABwEAAAAAAAAAQAAAHM",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAcBAAAAAAAABwEAAAAAAAAAAAAAAAAW0A"
+				],
+				[
+					39,
+					11,
+					"right_delete",
+					null,
+					"CwAAALkDAAAAAAAAuQMAAAAAAAABAAAAZLkDAAAAAAAAuQMAAAAAAAABAAAAZbkDAAAAAAAAuQMAAAAAAAABAAAAILkDAAAAAAAAuQMAAAAAAAABAAAAZLkDAAAAAAAAuQMAAAAAAAABAAAAb7kDAAAAAAAAuQMAAAAAAAABAAAAbrkDAAAAAAAAuQMAAAAAAAABAAAAbrkDAAAAAAAAuQMAAAAAAAACAAAAw6m5AwAAAAAAALkDAAAAAAAAAQAAAGW5AwAAAAAAALkDAAAAAAAAAQAAAHO5AwAAAAAAALkDAAAAAAAAAQAAACA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC5AwAAAAAAALkDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					42,
+					11,
+					"right_delete",
+					null,
+					"CwAAAG0EAAAAAAAAbQQAAAAAAAABAAAAIG0EAAAAAAAAbQQAAAAAAAABAAAAZG0EAAAAAAAAbQQAAAAAAAABAAAAZW0EAAAAAAAAbQQAAAAAAAABAAAAIG0EAAAAAAAAbQQAAAAAAAABAAAAZG0EAAAAAAAAbQQAAAAAAAABAAAAb20EAAAAAAAAbQQAAAAAAAABAAAAbm0EAAAAAAAAbQQAAAAAAAABAAAAbm0EAAAAAAAAbQQAAAAAAAACAAAAw6ltBAAAAAAAAG0EAAAAAAAAAQAAAGVtBAAAAAAAAG0EAAAAAAAAAQAAAHM",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABtBAAAAAAAAG0EAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					45,
+					11,
+					"right_delete",
+					null,
+					"CwAAAH0EAAAAAAAAfQQAAAAAAAABAAAAIH0EAAAAAAAAfQQAAAAAAAABAAAAZH0EAAAAAAAAfQQAAAAAAAABAAAAZX0EAAAAAAAAfQQAAAAAAAABAAAAIH0EAAAAAAAAfQQAAAAAAAABAAAAZH0EAAAAAAAAfQQAAAAAAAABAAAAb30EAAAAAAAAfQQAAAAAAAABAAAAbn0EAAAAAAAAfQQAAAAAAAABAAAAbn0EAAAAAAAAfQQAAAAAAAACAAAAw6l9BAAAAAAAAH0EAAAAAAAAAQAAAGV9BAAAAAAAAH0EAAAAAAAAAQAAAHM",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB9BAAAAAAAAH0EAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					48,
+					11,
+					"right_delete",
+					null,
+					"CwAAAI0EAAAAAAAAjQQAAAAAAAABAAAAII0EAAAAAAAAjQQAAAAAAAABAAAAZI0EAAAAAAAAjQQAAAAAAAABAAAAZY0EAAAAAAAAjQQAAAAAAAABAAAAII0EAAAAAAAAjQQAAAAAAAABAAAAZI0EAAAAAAAAjQQAAAAAAAABAAAAb40EAAAAAAAAjQQAAAAAAAABAAAAbo0EAAAAAAAAjQQAAAAAAAABAAAAbo0EAAAAAAAAjQQAAAAAAAACAAAAw6mNBAAAAAAAAI0EAAAAAAAAAQAAAGWNBAAAAAAAAI0EAAAAAAAAAQAAAHM",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACNBAAAAAAAAI0EAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					50,
+					11,
+					"right_delete",
+					null,
+					"CwAAALEEAAAAAAAAsQQAAAAAAAABAAAAILEEAAAAAAAAsQQAAAAAAAABAAAAZLEEAAAAAAAAsQQAAAAAAAABAAAAZbEEAAAAAAAAsQQAAAAAAAABAAAAILEEAAAAAAAAsQQAAAAAAAABAAAAZLEEAAAAAAAAsQQAAAAAAAABAAAAb7EEAAAAAAAAsQQAAAAAAAABAAAAbrEEAAAAAAAAsQQAAAAAAAABAAAAbrEEAAAAAAAAsQQAAAAAAAACAAAAw6mxBAAAAAAAALEEAAAAAAAAAQAAAGWxBAAAAAAAALEEAAAAAAAAAQAAAHM",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACxBAAAAAAAALEEAAAAAAAAAAAAAADAXUA"
+				],
+				[
+					55,
+					1,
+					"insert",
+					{
+						"characters": "**"
+					},
+					"AgAAAFMEAAAAAAAAVAQAAAAAAAAAAAAAVAQAAAAAAABVBAAAAAAAAAAAAAA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABTBAAAAAAAAFMEAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					57,
+					1,
+					"insert_snippet",
+					{
+						"contents": "*$0*"
+					},
+					"AQAAAGEEAAAAAAAAYwQAAAAAAAAAAAAA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABhBAAAAAAAAGEEAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					62,
+					1,
+					"insert",
+					{
+						"characters": "**"
+					},
+					"AgAAANAEAAAAAAAA0QQAAAAAAAAAAAAA0QQAAAAAAADSBAAAAAAAAAAAAAA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADQBAAAAAAAANAEAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					64,
+					1,
+					"insert_snippet",
+					{
+						"contents": "*$0*"
+					},
+					"AQAAAN4EAAAAAAAA4AQAAAAAAAAAAAAA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADeBAAAAAAAAN4EAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					69,
+					2,
+					"insert_snippet",
+					{
+						"contents": "*${0:$SELECTION}*"
+					},
+					"BAAAAOUEAAAAAAAA5QQAAAAAAAAGAAAARXhhbWVu5QQAAAAAAADtBAAAAAAAAAAAAADmBAAAAAAAAOYEAAAAAAAABgAAAEV4YW1lbuYEAAAAAAAA7gQAAAAAAAAAAAAA",
+					"CwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADrBAAAAAAAAOUEAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					1,
+					1,
+					"revert",
+					null,
+					"BAAAAAAAAAAAAAAAAAAAAAAAAAD5BAAAIyBMTkctMTEwMAoKIyMgTcOpdGhvZGVzIGV4cMOpcmltZW50YWxlcyBldCBhbmFseXNlIGRlIGRvbm7DqWVzCgo+IEJpZW52ZW51ZSEKCkNlIGTDqXDDtHQgR2l0IHNlcnQgw6AgcsOpdW5pciB0b3VzIGxlcyBmaWNoaWVycyB1dGlsaXPDqXMgZGFucyBsZSBjb3VycyBMTkctMTEwMC4KTGUgbGl2cmUgbnVtw6lyaXF1ZSBkdSBjb3VycyBlc3QgZGlzcG9uaWJsZSBzdXIgPGh0dHBzOi8vbG5nMTEwMC5xdWFydG8ucHViPi4KSWwgZXN0IGRlIHZvdHJlIHJlc3BvbnNhYmlsaXTDqSBkJ29yZ2FuaXNlciBldCBnw6lyZXIgdm9zIGZpY2hpZXJzIHNlbG9uIHZvcyBiZXNvaW5zIGV0IHByw6lmw6lyZW5jZXMuCgotIGBkaWFwb3NgIC0gbGVzIGBQREZgIGRlcyBkaWFwb3MgcG91ciBjaGFxdWUgc8OpYW5jZQotIGBkb25uZWVzYCAtIGxlcyBmaWNoaWVycyBkZXMgZG9ubsOpZXMgcXVpIHNlcm9udCBhbmFseXPDqWVzIHBlbmRhbnQgbGUgY291cnMKLSBgcHJvamV0c2AgLSBsZXMgZmljaGllcnMgcG91ciB2b3MgcHJvamV0cwotIGBzY3JpcHRzYCAtIHRvdXMgbGVzIGZpY2hpZXJzIGAuUmAgc2Vyb250IGRhbnMgY2UgZG9zc2llcgotIGBzb2x1dGlvbnNgIC0gbGVzIHNvbHV0aW9ucyBjb21tZW50w6llcyBwb3VyIGxlcyBleGVyY2ljZXMgZGFucyBsZSBsaXZyZSBudW3DqXJpcXVlIHV0aWxpc8OpCgpDJ2VzdCB0b3Vqb3VycyB1bmUgYm9ubmUgaWTDqWUgZGUgc8OpcGFyZXIgbGVzIGRvbm7DqWVzIGRlcyBzY3JpcHRzLCB2b2lsw6AgcG91cnF1b2kgaWwgeSBhIGRldXggZG9zc2llcnMgc8OpcGFyw6lzLgoKIyMjIENvbnRlbnUgZXQgYWN0aXZpdMOpcyBkdSBjb3VycwoKMS4gSW50cm9kdWN0aW9uCjIuIFF1ZXN0aW9uIGRlIHJlY2hlcmNoZTsgaW50cm9kdWN0aW9uIMOgIFIKMy4gRXhwbG9yYXRpb24KNC4gQW5hbHlzZSA6IHRlc3QgX3RfCjUuIEFuYWx5c2UgOiBBTk9WQQo2LiBBbmFseXNlIDogcsOpZ3Jlc3Npb24gbGluw6lhaXJlCjcuIEFuYWx5c2UgOiByw6lncmVzc2lvbiBsaW7DqWFpcmUKOC4gQ29tbXVuaWNhdGlvbiBkZXMgcsOpc3VsdGF0cyA6IHF1YXJ0bwo5LiAqKlLDqXZpc2lvbiAoYSkqKgoxMC4gTmV0dG95YWdlIGV0IGV4cGxvcmF0aW9uCjExLiBBbmFseXNlIDogcsOpZ3Jlc3Npb24gbG9naXN0aXF1ZQoxMi4gQW5hbHlzZSA6IHLDqWdyZXNzaW9uIGxvZ2lzdGlxdWUKMTMuICoqRXhhbWVuKioKCkNvbnN1bHRleiBsZXMgaW5mb3JtYXRpb25zIHN1ciBsZXMgw6l2YWx1YXRpb25zIGR1IGNvdXJzIHN1ciBgbW9uUG9ydGFpbGAuCgAAAAAAAAAA5gQAAAAAAAAAAAAAAAAAAAAAAADmBAAAAAAAAAAAAAAAAAAAAAAAAOYEAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAGsAAAAAAAAAawAAAAAAAAAAAAAAAADwvw"
+				]
+			]
+		}
+	],
+	"build_system": "Packages/MarkdownPreview/Markdown.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional Builder with PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional Builder with XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional Builder with LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder with PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder with XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder with LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/MarkdownPreview/Markdown.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/MarkdownPreview/Markdown.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/MarkdownPreview/Markdown.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/MarkdownPreview/Markdown.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SendCode/build_systems/IPython - Source File.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/R/R.sublime-build",
+					""
+				],
+				[
+					"Packages/SendCode/build_systems/R - Source File.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/SendCode/build_systems/R - Source File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/R/R.sublime-build",
+					""
+				],
+				[
+					"Packages/SendCode/build_systems/R - Source File.sublime-build",
+					""
+				],
+				[
+					"Packages/User/R-IDE/R-IDE.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/R/R.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rbox",
+				"Preferences: R-Box Key Bindings"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"terminus",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"repl",
+				"SublimeREPL: R"
+			],
+			[
+				"repl R",
+				"SublimeREPL: R"
+			],
+			[
+				"termin",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"quarto",
+				"Set Syntax: Quarto"
+			],
+			[
+				"Terminus",
+				"Preferences: Terminus Key Bindings"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packages",
+				"PackageResourceViewer: Extract All Packages"
+			],
+			[
+				"latex",
+				"LaTeXTools: Check system"
+			],
+			[
+				"install adva",
+				"Package Control: Advanced Install Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Advanced Install Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"wrap",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"terminu",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"run",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"send",
+				"SendCode: Choose Program"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"browse",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"update",
+				"Help: Check for Updates"
+			],
+			[
+				"set syntax: r",
+				"Set Syntax: R"
+			],
+			[
+				"r",
+				"R-IDE: Exec"
+			],
+			[
+				"terminus: open",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 178.0,
+		"history":
+		[
+			"q",
+			"quit",
+			"exit",
+			"r_eval_line",
+			"sublime.log_commands(True)",
+			"print(\"Hello\")",
+			"python \"test.py\"",
+			"python test.py",
+			"run"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/gdgarcia/Repos/LNG1100",
+		"/Users/gdgarcia/Repos/LNG1100/solutions"
+	],
+	"file_history":
+	[
+		"/Users/gdgarcia/Repos/LNG1100/solutions/ch2.R",
+		"/Users/gdgarcia/Repos/quarto_website_fr/LNG1100/revision_b.qmd",
+		"/Users/gdgarcia/Repos/quarto_website_fr/LNG1100/index.qmd",
+		"/Users/gdgarcia/Repos/quarto_website/career.qmd",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/frame.sublime-snippet",
+		"/Users/gdgarcia/Dropbox/Academia/Teaching/Laval/Introduction/Diapos/2-phon/LNG1000-2.tex",
+		"/Users/gdgarcia/Desktop/test.tex",
+		"/Users/gdgarcia/Dropbox/Academia/References/references.bib",
+		"/Users/gdgarcia/.config/ghostty/config",
+		"/Users/gdgarcia/Desktop/test.R",
+		"/Users/gdgarcia/Repos/LNG1100/ch2.R",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/zsh_commands/zsh_commands.txt",
+		"/Users/gdgarcia/Repos/quarto_website_fr/LNG1100/references.bib",
+		"/Users/gdgarcia/Repos/LNG1100/solutions/ch10.R",
+		"/Users/gdgarcia/Repos/LNG1100/solutions/ch14.R",
+		"/Users/gdgarcia/Repos/LNG1100/solutions/ch13.R",
+		"/Users/gdgarcia/Repos/LNG1100/solutions/ch12.R",
+		"/Users/gdgarcia/Repos/LNG1100/solutions/ch11.R",
+		"/Users/gdgarcia/Repos/LNG1100/solutions/ch9.R",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/gdgarcia/Repos/LNG1100/solutions/ch7.R",
+		"/Users/gdgarcia/Repos/LNG1100/solutions/ch6.R",
+		"/Users/gdgarcia/Repos/LNG1100/solutions/ch5.R",
+		"/Users/gdgarcia/Repos/LNG1100/solutions/ch4.R",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/question.sublime-snippet",
+		"/Users/gdgarcia/Dropbox/Academia/Teaching/Laval/Méthodes/general_notes.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Teaching/Laval/Méthodes/LNG1100/solutions/ch3.R",
+		"/Users/gdgarcia/Dropbox/Academia/Teaching/Laval/Méthodes/LNG1100/solutions/ch2.R",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/RStudio snippets/rstudio-snippets-markdown.txt",
+		"/Users/gdgarcia/.zshrc",
+		"/Users/gdgarcia/Dropbox/Website/quarto_website_fr/LNG1100/todo.txt",
+		"/Users/gdgarcia/.wezterm.lua",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/Sublime/Markdown.sublime-settings",
+		"/Users/gdgarcia/Desktop/test.py",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/python3.13.sublime-build",
+		"/Users/gdgarcia/Dropbox/Academia/Teaching/Laval/Phonologie II/add_2025.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Service/Journal reviews/Laboratory Phonology/LP1/review.txt",
+		"/Users/gdgarcia/Dropbox/Documents/General documents/Guilherme/Health/gpt_analysis.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/mc_config/mc.ext.ini",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/mc_config/panels.ini",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/zshrc_config/.zshrc",
+		"/Users/gdgarcia/.config/mc/mc.ext.ini",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Publications/GASLA 2024/duration.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/zshrc_config/.zshrc-mbair",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Projects/Italian pronouns/ItalianPronouns-EnglishExperiment/english_variables.csv",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Projects/Italian pronouns/ItalianPronouns-EnglishExperiment/responses/EnglishL2ers.csv",
+		"/Users/gdgarcia/Dropbox/Academia/Service/Abstract reviews/GLOW 47/reviews.txt",
+		"/Users/gdgarcia/Dropbox/Website/quarto_website/myStyles.scss",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/RStudio/rstudio-snippets-markdown.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Teaching/Laval/Méthodes/LNG1100/README.md",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/RStudio snippets/rstudio-snippets.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Teaching/Laval/Méthodes/LNG1100/project.Rproj",
+		"/Users/gdgarcia/Dropbox/Website/quarto_website/multcomp.qmd",
+		"/Users/gdgarcia/Desktop/LNG1100/_quarto-book.yml",
+		"/Users/gdgarcia/Desktop/LNG1100/_quarto.yml",
+		"/Users/gdgarcia/Desktop/test.txt",
+		"/Users/gdgarcia/Dropbox/Website/quarto_website/posts/2024-01-02-news-2024/index.qmd",
+		"/Users/gdgarcia/.zschrc",
+		"/Users/gdgarcia/Desktop/.zshrc",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/Sublime/spe.sublime-snippet",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/Sublime/license.txt",
+		"/Users/gdgarcia/Desktop/packages.tex",
+		"/Users/gdgarcia/Desktop/macros.tex",
+		"/Users/gdgarcia/Desktop/my_template.tex",
+		"/Users/gdgarcia/.config/alacritty/alacritty.toml",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/iTerm config/dracula.xrdb",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Projects/Sonority-driven/Data collection/Receipts/remboursement 2/liste.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Projects/Sonority-driven/Data collection/Data/new/data_exp_58088-v33_12231798/data_exp_58088-v33_questionnaire-68mh-12231798.csv",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/quarto-pdf-template/template.yaml",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/quarto-pdf-template/format-options.yaml",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/quarto-pdf-template/template.tex",
+		"/Users/gdgarcia/Dropbox/Academia/Teaching/Laval/Phonologie I/NOTES_2024.txt",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/iamb.sublime-snippet",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/syl.sublime-snippet",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/trochee.sublime-snippet",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/obs.sublime-snippet",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/spe_matrix.sublime-snippet",
+		"/Users/gdgarcia/Dropbox/Academia/Teaching/Laval/Phonologie I/LNG2000-sublime/14-revision.tex",
+		"/Users/gdgarcia/Dropbox/Academia/Teaching/Laval/Phonologie I/LNG2000-sublime/test.py",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/Default/Preferences.sublime-settings",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/OT5.sublime-snippet",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/spe5.sublime-snippet",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/aaspe.sublime-snippet",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/spe_rule3.sublime-snippet",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/spe_rule.sublime-snippet",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/spe_rule5.sublime-snippet",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/spe.sublime-snippet",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/spe_ruleb.sublime-snippet",
+		"/Users/gdgarcia/Dropbox/Academia/Technical/Sublime completions/ipa.sublime-completions",
+		"/Users/gdgarcia/Library/Application Support/Sublime Text/Packages/User/spe",
+		"/Users/gdgarcia/Library/Mobile Documents/com~apple~CloudDocs/Downloads/nuphy-air75-v2-via3.json",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Events/EUROSLA - Tromsø/Guzzo & Garcia/references.bib",
+		"/Users/gdgarcia/Desktop/rstudio-snippets.txt",
+		"/Users/gdgarcia/methodes",
+		"/Users/gdgarcia/Desktop/liste.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Publications/Phonology 2024 review/CUP-JNL-PHO.cls",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Projects/tchu_Guzzo_Garcia/AXB/production/cog.Praat",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Projects/tchu_Guzzo_Garcia/AXB/production/output.csv",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Projects/tchu_Guzzo_Garcia/AXB/production/cog copy.Praat",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Projects/tchu_Guzzo_Garcia/AXB/production/cog2.praat",
+		"/Users/gdgarcia/Desktop/cog.Praat",
+		"/Users/gdgarcia/Library/Mobile Documents/com~apple~CloudDocs/Downloads/10.3389-fpsyg.2018.00081-citation.bib",
+		"/Users/gdgarcia/Dropbox/Academia/Service/SLR/Editorship/Consultation/Consultation 4/final_comments.txt",
+		"/Users/gdgarcia/Desktop/final_comments.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Projects/Sonority-driven/Data collection/Data/new/data_exp_58088-v32_12095238/data_exp_58088-v32_questionnaire-68mh-12095238.csv",
+		"/Users/gdgarcia/Desktop/multcomp.R",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Publications/SSLA-multicomp/Reviews/changes_summary.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Projects/Sonority-driven/Data collection/Data/new/data_exp_58088-v31_12038813/data_exp_58088-v31_questionnaire-68mh-12038813.csv",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Projects/Sonority-driven/Data collection/Data/old/data_exp_58088-v25_11163045/data_exp_58088-v25_task-rp5z-11163045.csv",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Projects/Sonority-driven/Data collection/Data/old/data_exp_58088-v25_11174478/data_exp_58088-v25_task-rp5z-11174478.csv",
+		"/Users/gdgarcia/Library/Mobile Documents/com~apple~CloudDocs/Downloads/participants.csv",
+		"/Users/gdgarcia/Library/Mobile Documents/com~apple~CloudDocs/Downloads/data_exp_58088-v30_task-3rwn.csv",
+		"/Users/gdgarcia/Library/Mobile Documents/com~apple~CloudDocs/Downloads/data_exp_58088-v30/data_exp_58088-v30_questionnaire-kmua.csv",
+		"/Users/gdgarcia/Dropbox/Academia/Admin/Laval/Subventions/Mobilité AmLat 2024/budget.txt",
+		"/Users/gdgarcia/Desktop/st_johns.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Projects/Sonority-driven/Data collection/Info/Instructions.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Events/INVITED/CLA 2025 - McGill/cla_workshop_abstract.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Admin/Laval/Subventions/Mobilité AmLat 2024/reponses.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Admin/Laval/Subventions/Mobilité AmLat/reponses.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Admin/Laval/Subventions/SSHRC/Development/develop_sshrc.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Admin/Laval/SPUL/Délégué/Résumés/r1-2024-09-20.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Admin/Laval/SPUL/Délégué/Résumés/r0-2024-08-23.txt",
+		"/Users/gdgarcia/Dropbox/Academia/Research/Publications/LabPhon/LabPhon/Files/Article FINAL/Copyedited_LabPhon/garcia_goad_refs.bib",
+		"/Users/gdgarcia/Dropbox/Website/quarto_website/references.bib",
+		"/Users/gdgarcia/Dropbox/Website/quarto_website_fr/references.bib",
+		"/Users/gdgarcia/Dropbox/Academia/McGill/PhD/Publications/Dissertation/Thesis/references.bib"
+	],
+	"find":
+	{
+		"height": 55.0
+	},
+	"find_in_files":
+	{
+		"height": 484.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								878,
+								878
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"lsp_uri": "file:///Users/gdgarcia/Repos/LNG1100/README.md",
+							"mde.match_heading_hashes": false,
+							"show_line_column": "disabled",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 43.0
+	},
+	"input":
+	{
+		"height": 131.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.Terminus":
+	{
+		"height": 696.0
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 439.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 111.0
+	},
+	"output.markdown":
+	{
+		"height": 156.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.quarto_preview":
+	{
+		"height": 192.0
+	},
+	"pinned_build_system": "",
+	"project": "LNG1100-git.sublime-project",
+	"replace":
+	{
+		"height": 82.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 501.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"lsp_show_inlay_hints": false
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 299.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
