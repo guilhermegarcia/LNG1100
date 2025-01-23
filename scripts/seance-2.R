@@ -25,7 +25,7 @@ nombres = c(1, 2, 3, 87, 12, 15, 29, 1, 2, 3, 1000, NA)
 lesDeux = c("Montréal", 2, "Calgary", "25")
 # Les vecteurs n'acceptent qu'UNE seule classe
 # de valeurs
-# 
+
 # Fonctions basiques pour les vecteurs :
 nombres
 # Quelques fonctions basiques (statistique)
