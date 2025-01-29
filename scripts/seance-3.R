@@ -49,7 +49,9 @@ long <- tribble(
 
 long
 
-
+# Les questions ci-dessous sont basées sur
+# les tableaux large et/ou long.
+#
 # 1. Quel type de tableau est le meilleur pour
 # l'analyse de données à vos avis...?
 
