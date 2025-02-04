@@ -1,4 +1,4 @@
-rm(list=ls()) # Vider l'environnement
+rm(list = ls()) # Vider l'environnement
 # PRATIQUE FINALE
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -42,7 +42,7 @@ load("donnees/phonetique.RData")
 # a.
 # Il faut calculer l'amélioration à partir des tests.
 # Donc, on commence par une nouvelle colonne :
-phon = phon |>
+phon <- phon |>
   mutate(Diff = Post - Pre)
 # Cette colonne quantifie la différence entre les tests.
 # Effectivement, elle nous donne l'apprentissage des
@@ -63,7 +63,7 @@ ggplot(data = phon, aes(x = Condition, y = Diff)) +
 
 # b.
 # Voici le modèle :
-fit1 = lm(Diff ~ L1 + Compétence + Condition, data = phon)
+fit1 <- lm(Diff ~ L1 + Compétence + Condition, data = phon)
 summary(fit1)
 # Coefficients:
 #                     Estimate Std. Error t value Pr(>|t|)
@@ -90,8 +90,8 @@ summary(fit1)
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 5
 # a.
-titanic = read_csv("donnees/titanic.csv")
-fit2 = glm(Survived ~ Class + Sex + Age, data = titanic, family = "binomial")
+titanic <- read_csv("donnees/titanic.csv")
+fit2 <- glm(Survived ~ Class + Sex + Age, data = titanic, family = "binomial")
 summary(fit2)
 # b.
 # Homme, 2e classe, adulte ~ 20 %
@@ -117,7 +117,7 @@ predict(fit2,
 # c.
 # Voici une façon de créer un tableau
 # avec toutes les combinaisons dans nos données :
-newdata = expand.grid(
+newdata <- expand.grid(
   Class = c("1st", "2nd", "3rd", "Crew"),
   Sex = rep(c("Male", "Female")),
   Age = c("Child", "Adult")
@@ -129,7 +129,7 @@ newdata
 
 # Ensuite, on utilise ce tableau dans la fonction
 # predict() :
-newdata = newdata |>
+newdata <- newdata |>
   mutate(pred = predict(fit2, newdata, type = "response"))
 
 # Finalement, on ordonne les résultats selon la probabilité

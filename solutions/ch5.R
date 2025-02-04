@@ -1,13 +1,13 @@
-rm(list=ls()) # Vider l'environnement
+rm(list = ls()) # Vider l'environnement
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 1
 library(tidyverse)
-villes = read_csv("donnees/villes2.csv")
-qc_mtl = villes |>
+villes <- read_csv("donnees/villes2.csv")
+qc_mtl <- villes |>
   filter(ville != "Calgary")
 
 t.test(note ~ ville, data = qc_mtl)
-# Le test confirme un effet significatif de `ville` (p < 0,05), 
+# Le test confirme un effet significatif de `ville` (p < 0,05),
 # ce qui contredit le test posthoc Tukey effectué plus tôt
 # dans le chapitre (Québec-Montréal, p adj = 0.08).
 # L'ajustement de la valeur p dans le test Tukey
@@ -15,18 +15,18 @@ t.test(note ~ ville, data = qc_mtl)
 # deux villes. Au fait, si on décidait d'ignorer
 # Calgary dans l'étude, on conclurait que les notes
 # entre Québec et Montréal sont différentes. Si, par
-# contre, on décidait d'inclure Calgary, on aurait besoin 
+# contre, on décidait d'inclure Calgary, on aurait besoin
 # d'une ANOVA et, par conséquent, d'un test posthoc,
 # ce qui changera les résultats dans les données en question,
 # et notre différence ne sera plus significative.
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 2
-notes_80 = villes |> 
+notes_80 <- villes |>
   filter(note > 80)
 
-analyse = aov(note ~ ville, data = notes_80)
-analyse |> 
+analyse <- aov(note ~ ville, data = notes_80)
+analyse |>
   TukeyHSD()
 
 # Les résultats sont très différents, vu que, maintenant

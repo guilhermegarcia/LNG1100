@@ -1,17 +1,17 @@
-rm(list=ls()) # Vider l'environnement
+rm(list = ls()) # Vider l'environnement
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 1
-fb = read_csv("donnees/feedbackData.csv")
+fb <- read_csv("donnees/feedbackData.csv")
 glimpse(fb)
 
-fb = fb |>
+fb <- fb |>
   select(-c(task_B1:task_B5))
 
 glimpse(fb)
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 2
-fb = fb |>
+fb <- fb |>
   pivot_longer(
     names_to = "tache",
     values_to = "note",
