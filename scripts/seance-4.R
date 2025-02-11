@@ -1,7 +1,7 @@
 library(tidyverse)
 
 # ==============================================
-# La notion d'échantillonnage
+# NOTE: La notion d'échantillonnage
 # ==============================================
 
 # Imaginez une langue avec 20 locuteurs natifs.
@@ -38,6 +38,49 @@ mean(echant)
 
 # ==============================================
 # ==============================================
-# Notes et exercices de la séance
+# NOTE: Notes et exercices de la séance
 # ==============================================
 # ==============================================
+
+# Exemple avec le fichier villes.csv
+# Importons le fichier :
+villes <- read_csv("donnees/villes.csv")
+
+# Voici les premières lignes :
+villes
+# # A tibble: 100 × 2
+#     note ville
+#    <dbl> <chr>
+#  1  65.9 Québec
+#  2  64.6 Québec
+#  3  74.8 Québec
+#  4  69.7 Québec
+#  5  82.8 Québec
+#  6  70.9 Québec
+#  7  62.2 Québec
+#  8  78.8 Québec
+#  9  81.9 Québec
+# 10  69.2 Québec
+# # ℹ 90 more rows
+# # ℹ Use `print(n = ...)` to see more rows
+
+# Figure pour explorer les données :
+ggplot(data = villes, aes(x = ville, y = note)) +
+  geom_boxplot()
+
+
+# Test pour vérifier la différence entre les villes :
+# (je colle le résultat ici)
+t.test(note ~ ville, data = villes)
+#
+# 	Welch Two Sample t-test
+#
+# data:  note by ville
+# t = -4.1049, df = 97.919, p-value = 8.385e-05
+# alternative hypothesis: true difference in means between group Montréal and group Québec is not equal to 0
+# 95 percent confidence interval:
+#  -6.807543 -2.370457
+# sample estimates:
+# mean in group Montréal   mean in group Québec
+#                69.5838                74.1728
+#

@@ -96,4 +96,3 @@ long |>
 ggplot(data = long, aes(x = langues, y = correct)) +
   stat_summary()
 # C'est une figure très simple : vous pouvez l'améliorer, naturellement!
-
