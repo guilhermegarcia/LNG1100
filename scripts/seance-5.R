@@ -18,16 +18,20 @@ groupes <- tibble(
 # 1. Calculez les moyennes/écarts-types :
 # Il faut transformer les données avant
 # de commencer (le tableau n'est pas tidy)
-long <- groupes |> 
-  pivot_longer(names_to = "lettre",
-               values_to = "note",
-               cols = A:D)
+long <- groupes |>
+  pivot_longer(
+    names_to = "lettre",
+    values_to = "note",
+    cols = A:D
+  )
 
 # Moyennes et écarts-types :
-long |> 
-  summarize(M = mean(note),
-            ET = sd(note),
-            .by = lettre)
+long |>
+  summarize(
+    M = mean(note),
+    ET = sd(note),
+    .by = lettre
+  )
 
 # 2. Visualisez les données (créez une figure) :
 # boxplot, stat_summary, ...
@@ -53,3 +57,4 @@ TukeyHSD(mon_anova)
 
 
 # Le code utilisé ici est le même du chapitre 5.
+
