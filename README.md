@@ -33,4 +33,13 @@ C'est toujours une bonne idée de séparer les données des scripts, voilà pour
 13. Révision (b)
 14. **Examen**
 
+### Information sur les projets
+
+Les projets du cours implique la production d'un petit article où vous analiserez des données et communiquerez les résultats de votre analyse en simulant une publication. Il y a donc deux partie dans chaque projet :
+
+1. L'**analyse**, qui sera effectuée dans un script `.R`. Elle sera nécessaire _avant_ de commencer l'écriture de l'article
+2. L'**article**, qui sera créé dans un fichier `.Qmd` en utilisant Quarto
+
+On discutera les documents Quarto dans la 8ème séance du cours, mais vous pouvez commencer votre analyse avec votre équipe plus tôt si vous voulez (c'est une **bonne** idée).
+
 Consultez les informations sur les évaluations du cours sur `monPortail`.
