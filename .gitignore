@@ -21,4 +21,3 @@
 # Ignore system and temporary files
 .DS_Store
 .Rproj.user
-makefile
