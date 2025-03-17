@@ -38,7 +38,7 @@ C'est toujours une bonne idée de séparer les données des scripts, voilà pour
 Les projets du cours impliquent la production d'un petit article où vous analyserez des données et communiquerez les résultats de votre analyse en simulant une publication. Il y a donc deux parties dans chaque projet :
 
 1. L'**analyse**, qui sera effectuée dans un script `.R`, comme d'habitude. Elle sera nécessaire _avant_ de commencer l'écriture de l'article
-2. L'**article**, qui sera créé dans un fichier `.Qmd` en utilisant Quarto (séance 8)
+2. L'**article**, qui sera créé dans un fichier `.Qmd` en utilisant Quarto (séance 8). Consulter le dossier `projets` ci-dessus après la séance 8.
 
 On discutera les documents Quarto dans la 8e séance du cours, mais vous pouvez commencer votre analyse avec votre équipe plus tôt si vous voulez (c'est une **bonne** idée). Votre vie sera plus facile si vous avez déjà une idée de votre analyse lorsqu'on arrive à la discussion sur les documents Quarto dans la séance 8.
 
