@@ -9,6 +9,7 @@
 # Include specific other directories
 !scripts/
 !scripts/**
+!quarto/**
 !projets/
 !donnees/
 !donnees/**
