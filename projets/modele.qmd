@@ -1,0 +1,149 @@
+---
+title: "Projet"
+subtitle: "Votre sous-titre"
+author: "Vos noms" # Si vos noms sont trop longs, utilisez vos noms de famille
+number-sections: true
+date: today
+date-format: long
+format: 
+  pdf: # NE CHANGEZ PAS LE FORMAT!
+    include-in-header: 
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhead[C]{\textsc{lng1100 - méthodes expérimentales et analyse de données}}
+        \fancyhead[L]{}
+        \fancyhead[R]{}
+        \fancyfoot[C]{Page \thepage}
+bibliography: references.bib
+csl: https://www.zotero.org/styles/mots # format de références en français
+lang: fr
+language:
+  fr:
+    crossref-tbl-title: Tableau
+    crossref-sec-prefix: Séction
+    # Consulter https://github.com/quarto-dev/quarto-cli/blob/c1c5a4308f77fa2674082f41be12446cdcf415fd/src/resources/language/_language.yml
+---
+
+<!-- Pour enlever le numéro de page de la première page -->
+:::{latex}
+\thispagestyle{empty}
+:::
+
+```{r}
+#| message: false
+#| echo: false
+# Chargez vos extensions et vos données ici :
+library(knitr) # Pour les tableaux
+library(sjPlot) # Pour les modèles statistiques
+library(tidyverse)
+d <- read_csv("../donnees/villes2.csv")
+```
+# Introduction{#sec-intro}
+
+Ce document est un modèle pour votre projet. Évitez des changements dans le préambule du document. Votre document doit avoir une introduction, une section d'exploration, une section d'analyse, et une discussion/conclusion finale. Les références sont également nécessaires : vous devez citer `tidyvserse`, par exemple, ainsi que les œuvres consultées pour l'analyse statistique ou pour votre introduction.
+
+Voici la première section. Notez l'étiquette entre {} dans le code (faites attention aux espaces). Un mot **en gras** et un mot en *italique*. Selon @Barnier2023, la statistique est très utile! Consultez [cette page](https://quarto.org/docs/authoring/citations.html) pour savoir plus des citations. La note moyenne du fichier `villes2.csv` est de `r mean(d$note) |> round(2)`. Consultez la @sec-figtab pour apprendre comment générer des figures et des tableaux à partir de votre code R.
+
+Vous pouvez également créer des listes numérotées ou des listes de points, bien que ce type d'élément ne soit pas commun dans un article académique :
+
+- point 1
+- point 2
+
+1. premier point
+2. deuxième point
+
+
+# Figures et tableaux{#sec-figtab}
+
+## Figures{#sec-figures}
+
+Il est également facile d'inclure un bloc de code dans votre document. Examinez la @fig-fig1. Dans le préambule de la figure, vous décidez quelle sera sa taille ainsi que sa légende. L'argument `label` permet d'avoir des références croisées dans le texte, une caractéristique importante dans un document académique. Vous devez créer plusieurs figures **dans votre script**. Toutefois, il faut choisir quelle(s) figure(s) vous considérez suffisamment importante(s) pour le document final, ce qui dépendra de votre analyse, c'est-à-dire les variables choisies, etc. Une figure peut afficher plus de deux variables, naturellement, mais, si vous décidez d'inclure plusieurs variables dans votre modèle, il faudra avoir les figures cohérentes. Veuillez noter qu'il ne s'agit pas d'une opinion (bien que la statistique soit subjective). Vous êtes libres pour choisir les variables de votre analyse, mais il y a des analyses plus ou moins correctes selon ce choix, naturellement.
+
+```{r}
+#| echo: false
+#| message: false
+#| fig-width: 4
+#| fig-height: 2.5
+#| fig-cap: Une figure `ggplot2`
+#| label: fig-fig1
+
+ggplot(data = d, aes(x = ville, y = note)) + 
+  geom_boxplot() + 
+  labs(y = "Note", 
+       x = "Ville") +
+  theme_bw(base_family = "Times") # Vous pouvez changer la police ici
+# Veuillez noter que les options de police dépendent de votre ordinateur.
+# Si vous avez des erreurs, utilisez la police standard (enlevez base_family = ...).
+```
+
+Dans chaque bloc de code, vous êtes libre à créer n'importe quelle structure en utilisant votre code R. Il faut pourtant respecter la linéarité de l'analyse : pour utiliser un objet, il faut le charger *avant* de son utilisation, exactement comme vous faites dans un script R traditionnel.
+
+## Tableaux{#sec-tableaux}
+
+```{r}
+#| echo: false
+#| tbl-cap: Mon tableau
+#| label: tbl-tbl1
+d |> 
+  summarize(M = mean(note),
+  ET = sd(note),
+  .by = ville) |> 
+  mutate(across(where(is_double), ~round(.x, 2))) |> 
+  kable()
+```
+
+Vous pouvez utiliser la fonction `kable()` de l'extension `knitr` pour imprimer un tableau mis en forme dans votre PDF. Consultez le code ci-dessous pour le @tbl-tbl1. Naturellement, vous pouvez imprimer le tableau brut (tibble) directement. Toutefois, ce type de tableau n'est pas mis en forme pour une publication. Il faut donc l'éviter pour le projet.
+
+# Analyse statistique{#sec-stats}
+
+Après avoir exploré vos données, vous devez les analyser de façon appropriée. Pour imprimer le tableau d'un modèle linéaire, on utilise la fonction `tab_model()` de l'extension `sjPlot`. C'est une fonction très utile et déjà discuté en classe. Voici l'exemple pour le fichier `villes2.csv` : on exécute un modèle `note ~ ville`, qui suit naturellement de la @fig-fig1.
+
+
+<!-- Si jamais vous voulez ajouter un saut de page : -->
+<!-- enlever les commentaires ci-dessous pour {{<pagebreak>}} -->
+
+<!-- {{<pagebreak>}} -->
+
+<!-- cela peut être important si un tableau ou si une figure -->
+<!-- n'est pas exactement dans une position idéale dans le texte. -->
+
+```{r}
+#| message: false
+#| echo: false
+#| label: tbl-tbl2
+#| tbl-cap: Résultats du modèle statistique
+mod <- lm(note ~ ville, data = d)
+tab_model(mod)
+```
+<!-- Le tableau de tab_model() n'est pas magnifique, mais il  -->
+<!-- sera suffisant pour notre projet. -->
+
+Il faut maintenant interpréter les coefficients $\hat\beta$, naturellement. De plus, vous pouvez ajouter une version plus visuelle des résultats : une figure représentant le modèle. En effet, la figure pourrait *remplacer* le tableau, puisqu'elle affichera à peu près les mêmes informations. On utilise la fonction `plot_model()` de l'extension `sjPlot`.
+
+```{r}
+#| echo: false
+#| message: false
+#| fig-width: 4
+#| fig-height: 2.5
+#| fig-cap: Les coefficients du modèle et leurs IC à 95 %
+#| label: fig-fig2
+
+plot_model(mod, show.intercept = TRUE) + 
+  labs(title = NULL,
+       y = "Coefficients",
+       x = NULL) + 
+  theme_bw(base_family = "Times") # Vous pouvez changer la police ici
+# Veuillez noter que les options de police dépendent de votre ordinateur.
+# Si vous avez des erreurs, utilisez la police standard (enlevez base_family = ...).
+
+```
+
+Veuillez noter que la figure ne montre pas le coefficient de détermination $R^2$. Vous pouvez donc compléter la figure en ajoutant cette valeur dans votre texte manuellement, par exemple (si vous décider de ne pas utiliser le tableau). Une alternative serait d'utiliser le code en ligne suivant : `summary(mod)$r.squared |> round(2)`, ce qui renverra `r summary(mod)$r.squared |> round(2)`.
+
+
+
+
+
+# Références{-}
+
