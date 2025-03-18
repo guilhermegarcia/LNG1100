@@ -10,7 +10,7 @@ Il est de votre responsabilité d'organiser et gérer vos fichiers selon vos bes
 
 - `diapos` - les `PDF` des diapos pour chaque séance
 - `donnees` - les fichiers des données qui seront analysées pendant le cours
-- `projets` - les fichiers pour vos projets
+- `projets` - les fichiers pour vos projets (les données seront disponibles sur `monPortail`)
 - `scripts` - tous les fichiers `.R` seront dans ce dossier
 - `solutions` - les solutions commentées pour les exercices dans le livre numérique utilisé
 
