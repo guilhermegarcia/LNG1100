@@ -13,8 +13,8 @@
 !projets/**
 !donnees/
 !donnees/**
-!solutions/
-!solutions/**
+# !solutions/
+# !solutions/**
 # Always include specific files
 !README.md
 !project.Rproj
