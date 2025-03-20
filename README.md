@@ -30,7 +30,7 @@ C'est toujours une bonne idée de séparer les données des scripts, voilà pour
 11. Analyse : régression logistique
 12. Analyse : régression logistique
 13. Révision (b)
-14. **Examen**
+14. **Examen final**
 
 ### Information sur les projets
 
