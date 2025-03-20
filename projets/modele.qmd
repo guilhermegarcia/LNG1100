@@ -147,3 +147,66 @@ Veuillez noter que la figure ne montre pas le coefficient de détermination $R^2
 
 # Références{-}
 
+::: {#refs}
+:::
+
+{{<pagebreak>}}
+
+# Appendices{-}
+
+<!-- Ajoutez votre code ici. -->
+
+## Code d'exploration des données {-}
+
+```{r}
+#| eval: false
+
+# Les extensions utilisées :
+library(knitr) # Pour les tableaux
+library(sjPlot) # Pour les modèles statistiques
+library(tidyverse)
+
+# Le fichier des données :
+d <- read_csv("../donnees/villes2.csv")
+
+# Le tableau/résumé des données :
+d |> 
+  summarize(M = mean(note),
+  ET = sd(note),
+  .by = ville) |> 
+  mutate(across(where(is_double), ~round(.x, 2))) |> 
+  kable()
+```
+
+
+## Code des figures {-}
+
+```{r}
+#| eval: false
+
+# Figure des données :
+ggplot(data = d, aes(x = ville, y = note)) + 
+  geom_boxplot() + 
+  labs(y = "Note", 
+       x = "Ville") +
+  theme_bw(base_family = "Times")
+
+# Figure du modèle :
+plot_model(mod, show.intercept = TRUE) + 
+  labs(title = NULL,
+       y = "Coefficients",
+       x = NULL) + 
+  theme_bw(base_family = "Times")
+```
+
+## Code de l'analyse {-}
+
+```{r}
+#| eval: false
+
+# Code du modèle :
+mod <- lm(note ~ ville, data = d)
+tab_model(mod)
+```
+
+
