@@ -23,6 +23,7 @@ language:
     crossref-tbl-title: Tableau
     crossref-sec-prefix: Section
     # Consulter https://github.com/quarto-dev/quarto-cli/blob/c1c5a4308f77fa2674082f41be12446cdcf415fd/src/resources/language/_language.yml
+    # Dans la version en ligne, vous verrez que Table ne change pas. C'est un bug de Quarto.
 ---
 
 <!-- Pour enlever le numéro de page de la première page -->
