@@ -31,8 +31,17 @@ language:
 \thispagestyle{empty}
 :::
 
+```{r setup, include=FALSE}
+
+# Ce code enlève les warnings et les messages de façon globale
+knitr::opts_chunk$set(
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+
 ```{r}
-#| message: false
 #| echo: false
 # Chargez vos extensions et vos données ici :
 library(knitr) # Pour les tableaux
@@ -63,7 +72,6 @@ Il est également facile d'inclure un bloc de code dans votre document. Examinez
 
 ```{r}
 #| echo: false
-#| message: false
 #| fig-width: 4
 #| fig-height: 2.5
 #| fig-cap: Une figure `ggplot2`
@@ -110,7 +118,6 @@ Après avoir exploré vos données, vous devez les analyser de façon approprié
 <!-- n'est pas exactement dans une position idéale dans le texte. -->
 
 ```{r}
-#| message: false
 #| echo: false
 #| label: tbl-tbl2
 #| tbl-cap: Résultats du modèle statistique
@@ -124,7 +131,6 @@ Il faut maintenant interpréter les coefficients $\hat\beta$, naturellement. De 
 
 ```{r}
 #| echo: false
-#| message: false
 #| fig-width: 4
 #| fig-height: 2.5
 #| fig-cap: Les coefficients du modèle et leurs IC à 95 %
