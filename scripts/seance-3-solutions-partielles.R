@@ -1,6 +1,6 @@
 # Complétez le préambule du script selon
 # le besoin
-
+library(tidyverse)
 
 # ================================
 # ================================
@@ -24,14 +24,25 @@
 # pour vous donner des exemples :
 
 # Large
-large <- tribble(
+# Format « horizontal »
+large_tibble <- tibble(
+  id = c("PLK", "GP", "MFG"),
+  phonologie = c(80, 67, 72),
+  syntaxe = c(55, 79, 83),
+  phonetique = c(92, 83, 90)
+)
+
+# Format « vertical »
+large_tribble <- tribble(
   ~id, ~phonologie, ~syntaxe, ~phonetique,
   "PLK", 80, 55, 92,
   "GP", 67, 79, 83,
   "MFG", 72, 99, 90
 )
 
-large
+# visualiser les deux tibbles :
+large_tibble
+large_tribble
 
 # Long
 long <- tribble(
@@ -47,33 +58,99 @@ long <- tribble(
   "MFG", "phonetique", 90
 )
 
+# On n'est pas capable de générer une figure avec ggplot2
+# si le tableau n'est pas tidy, c'est-à-dire long.
+# Exemple de figure avec ggplot2 :
+ggplot(data = long, aes(x = id, y = note)) +
+  stat_summary(geom = "bar", alpha = 0.3) +
+  stat_summary()
+
+# Voyons le problème d'un tableau large :
+ggplot(data = large_tibble, aes(x = id, y = phonologie)) +
+  stat_summary(geom = "bar", alpha = 0.3) +
+  stat_summary()
+
+
 long
 
 # Les questions ci-dessous sont basées sur
 # les tableaux large et/ou long.
 #
 # 1. Quel type de tableau est le meilleur pour
-# l'analyse de données à vos avis...?
+# l'analyse de données à vos avis...? LONG = tidy (tidy data)
 
-# 2. Quel type est le plus commun pour les résultats des
+# 2. Quel type est le plus communs pour les résultats des
 # questionnaires à partir des sites tels que
-# Google Forms ou MS Forms?
+# Google Forms ou MS Forms? LARGE
 
 # On utilise tidyverse (spécifiquement l’extension tidyr) pour transformer
 # un tableau de large à long et vice-versa.
 
 # Transformation wide-to-long
+long_tableau <- large_tibble |>
+  pivot_longer(
+    names_to = "cours",
+    values_to = "note",
+    cols = phonologie:phonetique
+  )
+
+long_tableau
 
 # Transformation long-to-wide
 
+large_tableau <- long_tableau |>
+  pivot_wider(
+    names_from = cours,
+    values_from = note
+  )
+
+large_tableau
+
+long_tableau
+
 # 3. Comment calculer la moyenne générale des notes? Et l'écart-type?
+# « Prenez long_tableau et APRES créez un résumé avec la moyenne et l'écart-type »
+long_tableau |>
+  summarize(
+    moyenne = mean(note),
+    ET = sd(note),
+    # note_max = max(note),
+    # note_min = min(note)
+  )
 
 # 4. Comment créer une nouvelle colonne qui calcule la
 # distance entre les notes et 100?
+long_tableau <- long_tableau |>
+  mutate(
+    distance = 100 - note
+  )
+
+long_tableau
 
 # 5. Comment filtrer seulement les notes supérieures à 70?
+plus_que_70 <- long_tableau |>
+  filter(
+    note > 70,
+    # cours == "phonologie"
+  )
 
 # 6. Comment calculer la moyenne *par cours*?
+question6 <- long_tableau |> # prenez long_tableau
+  group_by(cours) |> # groupez les données par cours
+  summarize( # résumez les données en calculant les notes moyennes
+    moyenne = mean(note),
+    ET = sd(note)
+  )
+
+question6
+
+long_tableau |> # prenez long_tableau
+  summarize( # résumez les données en calculant les notes moyennes
+    moyenne = mean(note),
+    ET = sd(note),
+    .by = cours
+  )
+
 
 # ================================
 # ================================
@@ -84,9 +161,12 @@ long
 # Importer le fichier sampleData.csv
 # Donnez-lui le nom « donnees ».
 # Examinez les données attentivement pour comprendre leur structure.
+# library() = charger les bibliothèques; read_csv() = charger les fichiers csv
+donnees <- read_csv("donnees/sampleData.csv")
 
+donnees
 # 2. Les données sont-elles tidy? Autrement dit,
-# le tableau est-il large ou long?
+# le tableau est-il large ou long? LARGE (pas tidy)
 
 # 3. Quelles sont les moyennes et les écarts-types des notes pour chaque test?
 
