@@ -1,0 +1,106 @@
+---
+title: "Problème 1"
+subtitle: "LNG-1100 • Méthodes expérimentales et analyse de données"
+author: "Vos noms"
+date: 11/11/2025
+date-format: long
+lang: fr
+execute:
+  message: false
+  warning: false
+  # echo: false  # hides code
+format: pdf
+---
+
+# Les données
+
+Le fichier en question contient des données d'une tâche de décision lexicale (dont la variable de réponse est `RT`, log(ms)), avec deux groupes de participants : les locuteurs natifs et les locuteurs non natifs. Les données ont été collectées en 2004 par Jennifer Hay (professeure à l'Université de Canterbury, en Nouvelle-Zélande). Les données ont été adaptées à partir de l'extension `languageR` (AJOUTER CITATION ICI). Chaque participant doit dire si un mot est réel ou hypothétique aussi vite que possible. La variable `Class` classifie les mots en « plant » ou « animal ». Les autres variables pertinentes sont : `Sex`, `Length` (la longueur de chaque mot). Explorez attentivement les données avant de commencer votre analyse.
+
+# Les questions
+
+```{r} 
+#| message: false
+#| echo: false
+# On charge les bibliothèques nécessaires
+library(tidyverse)
+library(sjPlot)
+library(knitr)
+```
+
+0. Ajoutez la citation pour l'extension `languageR` dans le texte ci-dessus. (5pts)
+
+1. Le tableau en question est-il tidy? Pourquoi? (5pts)
+
+> Votre réponse ici.
+
+
+2. Créez une nouvelle colonne pour les temps de réaction en millisecondes. Nommez-la RTms. Imprimez les premières lignes du tibble. (10pts)
+
+```{r} 
+
+# VOTRE RÉPONSE ICI.
+
+```
+
+
+3. Quel est le temps de réaction (ms) moyen par classe de mot? (10pts)
+
+```{r} 
+
+# VOTRE RÉPONSE ICI.
+
+```
+
+
+4. Quelle est la longueur minimale et maximale des mots par classe? (10pts)
+
+```{r} 
+
+# VOTRE RÉPONSE ICI.
+
+```
+
+
+5. Quel est le temps de réaction moyen par langue maternelle? Quel groupe est le plus rapide? (10pts)
+
+```{r} 
+
+# VOTRE RÉPONSE ICI.
+
+```
+
+
+6. Créez une figure qui montre la relation entre RT (ms), Class et NativeLanguage. Quelle variable semble avoir un effet sur RT? (15pts)
+
+```{r} 
+#| out.width: 50%
+#| dpi: 500
+#| fig-width: 4
+#| fig-height: 2
+#| fig-align: center
+
+# VOTRE RÉPONSE ICI.
+
+```
+
+7. Exécuter une régression linéaire avec les variables qui vous semblent logique étant données les questions ci-dessus. Utilisez la version originale de RT (log) pour le modèle. Interprétez les résultats de façon complète. (15pts)
+
+```{r} 
+
+# VOTRE RÉPONSE ICI.
+
+```
+
+8. Enlevez tous les participants dont le temps de réaction est supérieur à 6.25. On se concentre donc sur les participants les plus rapides des groupes. Répétez la même figure et le même modèle pour les nouvelles données. Changez-vous vos conclusions? (20pts)
+
+```{r} 
+#| out.width: 50%
+#| dpi: 500
+#| fig-width: 4
+#| fig-height: 2
+#| fig-align: center
+
+# VOTRE RÉPONSE ICI.
+
+```
+

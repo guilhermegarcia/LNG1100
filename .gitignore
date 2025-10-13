@@ -15,6 +15,13 @@
 !donnees/**
 # !solutions/
 # !solutions/**
+# Include quarto folder
+!quarto/
+!quarto/**
+# Include problems
+!problemes/
+!problemes/**
+!problemes/**/*
 # Always include specific files
 !README.md
 !project.Rproj
