@@ -21,10 +21,14 @@ bibliography: references.bib
 #| echo: false
 
 # Ceci est un bloc de code. Il marche comme un « script R »
+# Assurez-vous que vous avez déjà installé les bibliothèques suivantes :
 library(tidyverse)
 library(knitr)
 library(sjPlot)
-library(modelsummary)
+# library(modelsummary) 
+# La bibliothèque modelsummary est utilisée pour générer des tableaux à partir
+# d'un modèle. Toutefois, posit.cloud n'est pas encore mis à jour. On utilise
+# donc sjPlot.
 
 v <- read_csv("villes.csv")
 ```
@@ -103,13 +107,16 @@ Maintenant, on peut nous référer au @tbl-monTableau1 aussi. Finalement, vous p
 #| label: tbl-monModele
 #| tbl-cap: Régression linéaire
 fit <- lm(note ~ ville, data = v)
-# tab_model(fit) # version avec sjPlot
+tab_model(fit) # version avec sjPlot
 
-fit |> modelsummary(
-  shape = term ~ model + statistic,
-  statistic = c("conf.int", "p.value"),
-  gof_map = c("adj.r.squared", "nobs")
-)
+# L'option ci-dessous exige la bibliothèque modelsummary,
+# qui ne semble pas fonctionner correctement dans la version
+# en ligne (posit.cloud). Utilisez plutôt tab_model().
+# fit |> modelsummary(
+#   shape = term ~ model + statistic,
+#   statistic = c("conf.int", "p.value"),
+#   gof_map = c("adj.r.squared", "nobs")
+# )
 ```
 
 
