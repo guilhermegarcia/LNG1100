@@ -1,0 +1,82 @@
+---
+title: "Un document"
+format: pdf
+date: today
+editor: visual
+number-sections: true
+lang: fr
+theme: united
+---
+
+# Figures
+
+Voici comment ajouter une figure **externe** au document Quarto. La @fig-chatte vous montre Peggy.
+
+![La chatte Peggy](../figures/chatte.jpeg){#fig-chatte fig-align="center" width="50%"}
+
+# Les auxiliaires de l'holandais
+
+On commence en chargeant la bibliothèque `tidyverse` ainsi que les données à partir du fichier `auxiliaires.csv`. 
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: true
+library(tidyverse)
+aux <- read_csv("../../donnees/auxiliaires.csv")
+```
+
+On peut imprimer le nombre de variables (supposant un tableau *tidy*) en utilisant la fonction `ncol()` : Il y a `r ncol(aux)` colonnes et `r nrow(aux)` observations dans les données, mais on n'analyse que deux variables, c'est-à-dire les variables `WrittenFrequency` et `Auxiliary`. On peut utiliser la fonction `select()` pour simplifier les données.
+
+## Figures avec `ggplot2`
+
+On va créer un histogramme pour vérifier si la variable de réponse est Gaussienne. 
+
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: true
+#| fig-align: center
+#| fig-width: 4
+#| fig-height: 2
+#| out.width: "70%"
+ggplot(data = aux, aes(x = WrittenFrequency)) +
+  geom_histogram() +
+  theme_classic() + 
+  labs(x = "Fréquence", y = "")
+```
+
+
+Maintenant, la figure principale :
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: true
+#| fig-align: center
+#| fig-width: 5
+#| fig-height: 3
+#| out.width: "70%"
+ggplot(data = aux, 
+       aes(x = Auxiliary |> fct_reorder(WrittenFrequency), 
+           y = WrittenFrequency)) + 
+  # geom_jitter(alpha = 0.1) + 
+  geom_boxplot(aes(fill = Auxiliary), alpha = 0.3) +
+  stat_summary(color = "black") + 
+  theme_classic() +
+  theme(
+    legend.position = "none"
+  ) +
+  labs(
+    x = "Auxiliaire",
+    y = "Fréquence écrite"
+  ) +
+  scale_fill_manual(
+    values = c("darkorange2", "white", "white")
+  )
+
+```
+
+
+
