@@ -12,7 +12,7 @@ theme: united
 
 Voici comment ajouter une figure **externe** au document Quarto. La @fig-chatte vous montre Peggy.
 
-![La chatte Peggy](../figures/chatte.jpeg){#fig-chatte fig-align="center" width="50%"}
+![La chatte Peggy](/figures/chatte.jpeg){#fig-chatte fig-align="center" width="50%"}
 
 # Les auxiliaires de l'holandais
 
