@@ -13,8 +13,8 @@
 !projets/**
 !donnees/
 !donnees/**
-# !solutions/
-# !solutions/**
+!solutions/
+!solutions/**
 # Include quarto folder
 !quarto/
 !quarto/**
