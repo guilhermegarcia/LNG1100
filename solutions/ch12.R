@@ -18,10 +18,30 @@ ggplot(data = long, aes(x = langues, y = correct)) +
 # Question 2
 fit1 <- glm(correct ~ langues, data = long, family = "binomial")
 summary(fit1)
+#
+# Call:
+# glm(formula = correct ~ langues, family = "binomial", data = long)
+#
+# Coefficients:
+#             Estimate Std. Error z value Pr(>|z|)
+# (Intercept)  -0.6931     0.5477  -1.266    0.206
+# languesOui    0.1823     0.6377   0.286    0.775
+#
+# (Dispersion parameter for binomial family taken to be 1)
+#
+#     Null deviance: 72.103  on 54  degrees of freedom
+# Residual deviance: 72.020  on 53  degrees of freedom
+# AIC: 76.02
+#
+# Number of Fisher Scoring iterations: 4
+#
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 3
-# L'interprétation dépendra des données.
+# L'effet de la variable prédictive en question (langues)
+# n'est pas significatif (B = 0.18, p = 0.775). On ne peut
+# pas donc rejeter l'hypothèse nulle, c'est-à-dire que
+# la variable langues n'a aucun effet sur la performance des participants.
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 4
