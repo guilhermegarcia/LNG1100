@@ -24,7 +24,7 @@
 !problemes/**/*
 # Always include specific files
 !README.md
-!project.Rproj
+!LNG1100.Rproj
 !.gitignore
 # Ignore system and temporary files
 .DS_Store
