@@ -1,0 +1,9 @@
+# Ce depot est GENERE a partir de LNG1100_priv. Ne rien modifier ici a la main.
+# Second filet de securite : rien de ce qui suit ne doit jamais y entrer.
+*.typ
+solutions/
+donnees/projets/
+donnees/archive/
+*-student.pdf
+.DS_Store
+.Rproj.user

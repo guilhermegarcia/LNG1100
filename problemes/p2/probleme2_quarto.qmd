@@ -1,0 +1,20 @@
+---
+title: "Problème 2"
+subtitle: "LNG-1100 • Méthodes expérimentales et analyse de données"
+author: "Vos noms"
+date: today
+date-format: long
+lang: fr
+execute:
+  message: false
+  warning: false
+  # echo: false  # hides code
+format: pdf
+---
+# Introduction
+
+# Exploration des données
+
+# Analyse statistique
+
+# Conclusion
