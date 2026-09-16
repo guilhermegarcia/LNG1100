@@ -29,6 +29,7 @@ LNG1100/
 ├── README.md
 ├── diapos/
 ├── donnees/
+├── problemes/
 ├── quarto/
 └── scripts/
 ```
@@ -85,8 +86,9 @@ Lorsque vous téléchargez un nouveau fichier pour le cours :
 
 - placez les fichiers de données (`.csv`, `.RData`, etc.) dans `donnees`;
 - placez les scripts R (`.R`) dans `scripts`;
-- placez les fichiers associés à un problème dans un dossier `problemes/p1`,
-  `problemes/p2`, etc., que vous créerez au moment où le problème est publié.
+- placez les fichiers associés à un problème dans le dossier `problemes/p1`,
+  `problemes/p2`, etc. qui correspond au problème. Si le dossier n'existe pas
+  encore, créez-le.
 
 Déplacez le fichier à l'aide du Finder (macOS) ou de l'Explorateur de fichiers
 (Windows), puis vérifiez qu'il apparaît dans l'onglet **Files** de RStudio.
@@ -116,12 +118,10 @@ Si vous ne retrouvez plus vos fichiers, vérifiez d'abord :
 - `diapos` - les `PDF` des diapos, publiés séance par séance
 - `donnees` - les fichiers des données qui seront analysées pendant le cours
   (`base` : disponibles dès le début; `supplementaires` : ajoutés au fil du trimestre)
+- `problemes` - l'énoncé et les données de chaque problème (`p1`, `p2`, etc.),
+  ajoutés au fur et à mesure que les problèmes sont publiés
 - `quarto` - le modèle de rapport (`modele.qmd`) et un exemple de document Quarto
 - `scripts` - tous les fichiers `.R`, publiés séance par séance
-
-Le dossier `problemes` n'est pas fourni au départ : créez-le vous-même lorsque le
-premier problème est publié (les énoncés et les données seront disponibles sur
-`monPortail`).
 
 C'est toujours une bonne idée de séparer les données des scripts, voilà pourquoi il y a deux dossiers séparés.
 
