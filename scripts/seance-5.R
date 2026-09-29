@@ -15,6 +15,8 @@ groupes <- tibble(
   D = rnorm(100, mean = 70, sd = 20)
 )
 
+# 0. Le tableau est-il Tidy?
+
 # 1. Calculez les moyennes/écarts-types :
 
 # 2. Visualisez les données (créez une figure) :
