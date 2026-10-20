@@ -10,7 +10,12 @@ load("donnees/base/pisa_2025.RData")
 pays <- pisa |>
   filter(country %in% c("CAN", "FRA", "ESP", "USA")) |>
   droplevels() |>
-  mutate(score = mean(math, read, scie), .by = school)
+  summarize(score = mean(c(math, read, scie)), .by = c(country, school))
+
+# A: On utilise summarize() pour obtenir une seule ligne par école, et on garde
+# country dans .by pour ne pas perdre la colonne.
+# Le décalage trouvé entre (math + read + scie) / 3 et mean(...) est expliqué par
+# la fonction c() (qui est maintenant nécessaire parce que mean() ne prend qu'un seul vecteur).
 
 pays
 
@@ -45,9 +50,11 @@ fit <- lm(score ~ country, data = pays)
 summary(fit)
 confint(fit)
 # A: La régression confirme que les notes de
-# l'Espagne (bêta = -19), de la France (bêta = -35) et des États-Unis (bêta = -15)
-# sont statistiquement inférieures à celle du Canada (bêta = 470), notre intercept :
-# p < 0,0001. Les intervalles de confiance à 95 % sont générés par la fonction ci-dessus.
+# l'Espagne (bêta = -20) et de la France (bêta = -35) sont statistiquement
+# inférieures à celle du Canada (bêta = 482), notre intercept : p < 0,0001.
+# En revanche, la différence entre les États-Unis et le Canada (bêta = -3)
+# n'est pas significative (p = 0,53) : son IC à 95 % [-11,7 ; 6,0] inclut zéro.
+# Les intervalles de confiance à 95 % sont générés par la fonction ci-dessus.
 #
 # A: Une autre option serait d'utiliser sjPlot :
 fit |> tab_model()
@@ -59,7 +66,7 @@ fit |>
   _$contrasts
 
 # A: Toutes les comparaisons sont significatives, sauf
-# ESP vs USA. On peut également créer une figure personnalisée :
+# CAN vs USA (p = 0,92). On peut également créer une figure personnalisée :
 fit |>
   emmeans(~country) |>
   pairs() |>
@@ -86,7 +93,7 @@ mon_anova |> summary()
 mon_anova |> TukeyHSD()
 
 # A: Une ANOVA confirme un résultat significatif pour la variable pays :
-# F(3, 2281) = 39,69 p < 0,0001. Les comparaisons multiples indiquent qu'une seule
-# pair n'est pas significative, c'est-à-dire USA. Vous pouvez donc confirmer que la régression et l'ANOVA nous donnent les mêmes résultats pour un scénario simple.
+# F(3, 2281) = 45,85, p < 0,0001. Les comparaisons multiples indiquent qu'une seule
+# paire n'est pas significative, c'est-à-dire USA vs CAN. Vous pouvez donc confirmer que la régression et l'ANOVA nous donnent les mêmes résultats pour un scénario simple.
 # Évidemment, ceci n'est pas toujours le cas. Finalement, remarquez que les degrés de liberté
 # pour l'ANOVA sont également affichés à la fin du résultat de lm().
