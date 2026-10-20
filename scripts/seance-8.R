@@ -10,7 +10,7 @@ load("donnees/base/pisa_2025.RData")
 pays <- pisa |>
   filter(country %in% c("CAN", "FRA", "ESP", "USA")) |>
   droplevels() |>
-  summarize(score = mean(c(math, read, scie)), .by = c(country, school))
+  mutate(score = mean(c(math, read, scie)), .by = c(school))
 
 # A: On utilise summarize() pour obtenir une seule ligne par école, et on garde
 # country dans .by pour ne pas perdre la colonne.
