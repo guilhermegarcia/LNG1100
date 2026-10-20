@@ -12,10 +12,10 @@ pays <- pisa |>
   droplevels() |>
   mutate(score = mean(c(math, read, scie)), .by = c(school))
 
-# A: On utilise summarize() pour obtenir une seule ligne par école, et on garde
-# country dans .by pour ne pas perdre la colonne.
-# Le décalage trouvé entre (math + read + scie) / 3 et mean(...) est expliqué par
-# la fonction c() (qui est maintenant nécessaire parce que mean() ne prend qu'un seul vecteur).
+# A: mutate() avec .by = school calcule la moyenne des trois tests pour chaque école.
+# Le décalage trouvé entre (math + read + scie) / 3 et mean(math, read, scie) est
+# expliqué par la fonction c() : mean() ne prend qu'un seul vecteur. Sans c(), R
+# interprète read et scie comme d'autres arguments et retourne simplement math.
 
 pays
 
