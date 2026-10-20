@@ -1,4 +1,5 @@
 library(tidyverse)
+library(emmeans)
 
 # Pratique d'une régression linéaire
 #
@@ -50,3 +51,59 @@ groupes <- tibble(
 # ===============================
 # ===============================
 # Pratique à la maison : figure à reproduire
+#
+
+ville <- read_csv("donnees/base/villes2.csv")
+
+ville
+
+fit1 <- lm(note ~ duree, data = ville)
+fit2 <- lm(note ~ ville, data = ville)
+fit3 <- lm(note ~ ville + duree, data = ville)
+
+summary(fit1) # 0.03 R^2
+summary(fit2) # 0.06 R^2 <- meilleure option
+summary(fit3) # 0.056 R^2
+
+anova(fit2, fit3)
+
+# 1. Le modèle 2 nous donne le meilleur coef de det
+# 2. Les modèles 2 et 3 ne sont pas stat différents
+#
+
+ville |>
+  summarize(
+    M = mean(note),
+    ET = sd(note),
+    VAR = var(note),
+    .by = ville
+  )
+
+confint(fit2)
+
+
+d <- read_csv("donnees/base/feedbackData.csv")
+
+d
+
+ggplot(data = d, aes(x = Feedback, y = task_A1, fill = L1)) +
+  geom_boxplot(
+    # position = position_dodge(width = 0.95),
+  ) +
+  stat_summary(
+    position = position_dodge(width = 0.75),
+    show.legend = FALSE
+  )
+
+fit2 |> summary()
+
+# Calgary vs Montréal
+# Calgary vs Québec
+
+
+fit2 |>
+  emmeans(pairwise ~ ville) |>
+  _$contrasts |>
+  as_tibble() |>
+  ggplot(aes(x = estimate, y = contrast)) +
+  geom_point()
