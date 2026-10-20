@@ -1,18 +1,21 @@
 # NOTE: Pratique finale : PISA 2025
+library(tidyverse)
+library(emmeans)
+library(sjPlot)
 
 load("donnees/base/pisa_2025.RData")
 
 # Q: 1. Créer un sous-ensemble : CAN, FRA, ESP, USA
 # Q: 2. Créer une nouvelle colonne pour la moyenne des tests
-cfeu <- pisa |>
+pays <- pisa |>
   filter(country %in% c("CAN", "FRA", "ESP", "USA")) |>
   droplevels() |>
-  mutate(score = (math + read + scie) / 3)
+  mutate(score = mean(math, read, scie), .by = school)
 
-cfeu
+pays
 
 # Q: 3. Créer un résumé des notes moyennes : moyennes et écarts-types
-cfeu |>
+pays |>
   summarize(
     M = mean(score),
     ET = sd(score),
@@ -20,7 +23,7 @@ cfeu |>
   )
 
 # Q: 4. Créer une figure : changer les étiquettes selon le besoin
-ggplot(data = cfeu, aes(x = country, y = score)) +
+ggplot(data = pays, aes(x = country, y = score)) +
   geom_boxplot() +
   stat_summary() +
   theme_classic() +
@@ -38,27 +41,25 @@ ggplot(data = cfeu, aes(x = country, y = score)) +
 
 
 # Q: 6. Régression linéaire + IC + interprétation :
-fit <- lm(score ~ country, data = cfeu)
+fit <- lm(score ~ country, data = pays)
 summary(fit)
 confint(fit)
 # A: La régression confirme que les notes de
-# l'Espagne (482 - 19) et de la France (bêta = 482 - 35)
-# sont statistiquement inférieures à celle du Canada (bêta = 482) :
-# p < 0,0001. Toutefois, le modèle n'est pas capable de trouver un effet
-# significatif pour USA (482 - 2,8), p = 0,53. On n'est donc pas capable
-# de rejeter l'hypothèse nulle selon laquelle la différence entre le Canada
-# et les États-Unis est nulle. Notez que la comparaison ici *combine* tous
-# les examens de PISA (mat, sciences, lecture). Les intervalles de confiance à
-# 95 % doivent être rapportés aussi.
+# l'Espagne (bêta = -19), de la France (bêta = -35) et des États-Unis (bêta = -15)
+# sont statistiquement inférieures à celle du Canada (bêta = 470), notre intercept :
+# p < 0,0001. Les intervalles de confiance à 95 % sont générés par la fonction ci-dessus.
+#
+# A: Une autre option serait d'utiliser sjPlot :
+fit |> tab_model()
+fit |> plot_model()
 
 # Q: 7. Que révèlent les comparaisons multiples?
-library(emmeans)
 fit |>
   emmeans(pairwise ~ country, adjust = "tukey") |>
   _$contrasts
 
 # A: Toutes les comparaisons sont significatives, sauf
-# CAN vs USA. On peut également créer une figure :
+# ESP vs USA. On peut également créer une figure personnalisée :
 fit |>
   emmeans(~country) |>
   pairs() |>
@@ -76,3 +77,16 @@ fit |>
     x = "Coefficient", y = "Comparaison",
     title = "Comparaisons à partir de emmeans"
   )
+
+# Q: ANOVA
+
+mon_anova <- aov(score ~ country, data = pays)
+mon_anova |> summary()
+
+mon_anova |> TukeyHSD()
+
+# A: Une ANOVA confirme un résultat significatif pour la variable pays :
+# F(3, 2281) = 39,69 p < 0,0001. Les comparaisons multiples indiquent qu'une seule
+# pair n'est pas significative, c'est-à-dire USA. Vous pouvez donc confirmer que la régression et l'ANOVA nous donnent les mêmes résultats pour un scénario simple.
+# Évidemment, ceci n'est pas toujours le cas. Finalement, remarquez que les degrés de liberté
+# pour l'ANOVA sont également affichés à la fin du résultat de lm().
