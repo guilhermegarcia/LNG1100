@@ -59,7 +59,7 @@ Un bloc de code doit commencer avec trois accents graves suivis par `r`. Dans le
 
 ## Exemples
 
-Générons des tableaux et une figure avec nos blocs de code. On utilise `villes.csv`, déjà chargé, ainsi que `tidyverse`. Pour notre problème, vous verrez que les blocs auront la ligne `echo: true`. Cela imprimera **le code** ainsi que son résultat (le cas échéant) dans le `PDF`. Toutefois, dans un article typique, on utiliserai `echo: false`, pour cacher le code.
+Générons des tableaux et une figure avec nos blocs de code. On utilise `villes.csv`, déjà chargé, ainsi que `tidyverse`. Au problème 1, afficher le code est facultatif; au problème 2, il est obligatoire : vos blocs auront donc la ligne `echo: true`, qui imprime **le code** ainsi que son résultat (le cas échéant) dans le `PDF`. Toutefois, dans un article typique, on utiliserai `echo: false`, pour cacher le code.
 
 
 ```{r} 
