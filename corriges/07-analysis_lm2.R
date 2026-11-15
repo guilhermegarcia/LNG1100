@@ -26,8 +26,7 @@ ggplot(data = ang, aes(x = TRms)) +
 # Question 3
 ggplot(data = ang, aes(x = Age, y = TR)) +
   geom_boxplot() +
-  stat_summary(color = "red") +
-  geom_smooth(method = "lm")
+  stat_summary(color = "red")
 # Oui : il y a un effet très clair. Les participants
 # jeunes sont plus rapides.
 
@@ -75,9 +74,9 @@ summary(fit3)
 # de confiance à 95 % :
 confint(fit3)
 # Une régression linéaire multiple confirme l'effet de l'âge
-# des participants (β̂ = -0.22, IC à 95 % = [-0,22 -0,21], p < 0,0001) et de
-# la familiarité des mots utilisés (β̂ = -0,06,
-# IC à 95 % = [-0,06 -0,05], p < 0,0001). Le modèle en question a un
+# des participants (β̂ = -0,217, IC à 95 % = [-0,225, -0,210], p < 0,0001) et de
+# la familiarité des mots utilisés (β̂ = -0,060,
+# IC à 95 % = [-0,064, -0,057], p < 0,0001). Le modèle en question a un
 # coefficient de détermination de 0,69, ce qui est considérable :
 # deux variables sont capables d'expliquer presque 70 % de la variations
 # des temps de réactions dans les données en question.
@@ -90,7 +89,10 @@ ang <- ang |>
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 8
 fit4 <- lm(TR ~ Age + Fam_cat, data = ang)
-# Les coefficients de détermination sont virtuellement identiques.
+summary(fit4)
+# Le R^2 de fit4 (0,6875) est très légèrement supérieur à celui
+# de fit3 (0,6873). Les coefficients de détermination sont donc
+# virtuellement identiques.
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 9

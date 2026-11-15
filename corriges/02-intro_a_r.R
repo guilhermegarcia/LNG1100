@@ -66,7 +66,7 @@ langues
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 10
-# Le format large, malheureusement. Donc, il est **essential**
+# Le format large, malheureusement. Donc, il est **essentiel**
 # de savoir comment faire la transformation *wide-to-long*
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -137,7 +137,7 @@ donnees_long <- donnees |>
   pivot_longer(
     names_to = "test",
     values_to = "note",
-    col = testA:testC
+    cols = testA:testC
   )
 
 # Maintenant, on peut calculer les moyennes en groupant

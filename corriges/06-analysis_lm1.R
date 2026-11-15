@@ -36,7 +36,7 @@ summary(fit1)
 
 # Interprétation. Le modèle confirme une différence statistiquement
 # significative entre le groupe de Calgary (notre intercept; β0) et
-# de Québec (β̂ = 7.16$, IC 95 % = [2.96, 11.37], p = 0.001). Cela
+# de Québec (β̂ = 7.16, IC 95 % = [2.96, 11.37], p = 0.001). Cela
 # veut dire que la différence entre les deux groupes est de 7.16 points.
 # La différence entre Calgary et Montréal, par contre, n'est pas
 # statistiquement significative (β̂ = 2.57, IC 95 % = [-1.63, 6.78], p = 0.228).
@@ -95,7 +95,7 @@ ggplot(data = villes, aes(x = duree, y = note)) +
 # Une fois que les variables `ville` et `duree` sont visualisées ensemble,
 # l'effet du temps d'étude ne semble plus avoir d'importance :
 # les droites sont essentiellement horizontales, ce qui suggère qu'il n'y a
-# aucun effet (n'oubliez pas la définition de l'$H_0$). Maintenant,
+# aucun effet (n'oubliez pas la définition de H0). Maintenant,
 # exécutons notre régression pour vérifier les effets en question.
 
 # Le modèle :
@@ -106,16 +106,17 @@ summary(fit3)
 # de la variable `ville`, mais l'effet de la variable `duree` n'est plus
 # significatif. Cela ne devrait pas être surprenant étant données les figures
 # ci-dessus : lorsqu'on considère les différentes villes, l'effet du temps
-# d'étude disparaît ($\hat\beta = -0.06$, IC 95 % $= [-0.30, -0.18], p = 0.632$).
+# d'étude disparaît (β̂ = -0.06, IC 95 % = [-0.30, 0.18], p = 0.632).
 # L'effet de ville est toujours là pour Québec, c'est-à-dire qu'il y a une
 # différence statistiquement significative entre Calgary et Québec
 # (β̂ = 8.56, IC 95 % = [1.44, 15.68], p = 0.019). Veuillez noter
-# que le R^2 (le coefficient de détermination) est minuscule : 0.056.
-# Simplement dit, lorsqu'on utilise ces deux variables prédictives, on
-# n'explique que 5 % de la variation des notes dans les données.
+# que le R^2 (le coefficient de détermination) est minuscule : 0.075
+# (R^2 ajusté = 0.056). Simplement dit, lorsqu'on utilise ces deux
+# variables prédictives, on n'explique qu'environ 7 % de la variation
+# des notes dans les données.
 
 
-# La figure. La figure ci-dessous utilise la fonction `facet_grid()`, qui permet
+# La figure. La figure de la question 2 ci-dessus utilise la fonction `facet_grid()`, qui permet
 # d'ajouter des fenêtres au graphique pour séparer les données à partir d'une
 # variable catégorielle (`ville` ici). La figure « extra » dans les diapos,
 # par contre, utilise des couleurs pour représenter les différents groupes.
@@ -125,7 +126,6 @@ summary(fit3)
 ggplot(villes, aes(x = duree, y = note)) +
   stat_smooth(method = "lm") +
   geom_point(size = 4, alpha = 0.5, aes(color = ville)) +
-  coord_cartesian(xlim = c(0, 60)) +
   labs(
     x = "Temps d'étude du français (en mois)",
     y = "Note",
@@ -133,8 +133,4 @@ ggplot(villes, aes(x = duree, y = note)) +
     title = "Les notes des trois groupes"
   ) +
   theme_minimal(base_size = 12) +
-  coord_cartesian(ylim = c(0, 100)) +
-  theme(
-    plot.title = ggtext::element_markdown(),
-    plot.subtitle = ggtext::element_markdown()
-  )
+  coord_cartesian(xlim = c(0, 60), ylim = c(0, 100))

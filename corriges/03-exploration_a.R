@@ -1,6 +1,7 @@
 rm(list = ls()) # Vider l'environnement
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 1
+library(tidyverse)
 fb <- read_csv("donnees/base/feedbackData.csv")
 glimpse(fb)
 
@@ -72,8 +73,10 @@ ggplot(data = fb, aes(
 # Question 5
 ggplot(data = fb, aes(x = Hours, y = note)) +
   geom_point() +
-  geom_smooth() +
+  geom_smooth(method = "lm") +
   theme_minimal()
+# Par défaut, geom_smooth() trace une courbe (loess), pas une
+# droite de régression : il faut préciser method = "lm".
 # On observe une tendance importante : plus le nombre
 # d'heures d'études d'un participant est élevé, plus
 # le score moyen augmente. Donc, apparemment, il y a

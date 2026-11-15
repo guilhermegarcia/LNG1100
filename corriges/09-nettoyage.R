@@ -17,8 +17,9 @@ q2 <- q2 |>
   clean_names()
 
 # 2. Enlever des colonnes inutiles
+# (^ = « commence par »; x33 est la colonne vide à la fin du fichier)
 q2 <- q2 |>
-  select(-matches("heure|adresse|nom|artiste|total|quiz|points|feedback"))
+  select(-matches("^(heure|adresse|nom|votre_artiste|total|quiz|points|feedback|x33)"))
 
 # 2. Transformer les colonnes des question (wide-to-long)
 long <- q2 |>
@@ -88,11 +89,18 @@ long |>
 # Question 3
 long |>
   summarize(Score = mean(correct, na.rm = TRUE), .by = geo)
+# Oui : les participants qui aiment la géographie ont une
+# précision plus élevée (64 % vs 35 %). On vérifiera cet effet
+# statistiquement avec une régression logistique (chapitre 11).
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Question 4
-# Voici une figure sur la relation entre la connaissance
-# d'autres langues et la performance dans le questionnaire :
-ggplot(data = long, aes(x = langues, y = correct)) +
-  stat_summary()
+# Voici une figure sur la relation entre le goût pour la
+# géographie (question 3) et la performance dans le questionnaire :
+ggplot(data = long, aes(x = geo, y = correct)) +
+  stat_summary() +
+  labs(
+    x = "Aimez-vous la géographie?",
+    y = "Précision"
+  )
 # C'est une figure très simple : vous pouvez l'améliorer, naturellement!

@@ -25,13 +25,49 @@ t.test(note ~ ville, data = qc_mtl)
 notes_80 <- villes |>
   filter(note > 80)
 
+# Combien d'observations par ville?
+notes_80 |>
+  count(ville)
+# Calgary = 12, Montréal = 1, Québec = 7 (N = 20)
+
+# L'ANOVA manuelle (même code que dans le chapitre) :
+N <- nrow(notes_80)
+X <- mean(notes_80$note)
+k <- 3
+
+notes_80 <- notes_80 |>
+  mutate(moyenne = mean(note), .by = ville)
+
+SCEentre <- notes_80 |>
+  summarize(moyenne = mean(note), n = n(), .by = ville) |>
+  mutate(n_CE = n * (moyenne - X)^2) |>
+  summarize(SCEentre = sum(n_CE)) |>
+  pull()
+
+SCEintra <- notes_80 |>
+  summarize(SCEintra = sum((note - moyenne)^2)) |>
+  pull()
+
+MSCEentre <- SCEentre / (k - 1)
+MSCEintra <- SCEintra / (N - k)
+valeurF <- MSCEentre / MSCEintra
+valeurF
+pf(valeurF, df1 = k - 1, df2 = N - k, lower.tail = FALSE)
+
+# La fonction aov() donne les mêmes valeurs
+# (F(2, 17) = 0,93, p = 0,415) :
 analyse <- aov(note ~ ville, data = notes_80)
+summary(analyse)
+
 analyse |>
   TukeyHSD()
 
 # Les résultats sont très différents, vu que, maintenant
 # il n'y a aucune différence significative. L'effet est
-# donc disparu. Cela suggère que plus un apprenant est précis dans
-# le test, plus il est difficile de trouver un effet de `ville`.
-# Pour calculer la valeur F manuellement, vous devez simplement
-# exécuter les codes dans le chapitre en utilisant la variable notes_80.
+# donc disparu. Attention, par contre : cela ne veut pas dire que
+# les villes sont identiques chez les meilleurs apprenants. Le
+# sous-ensemble est minuscule (N = 20) et très déséquilibré :
+# il n'y a qu'un seul apprenant de Montréal. Avec si peu de
+# données, il est presque impossible de détecter une différence.
+# En plus, en ne gardant que les notes supérieures à 80, on réduit
+# artificiellement la variation des notes.
