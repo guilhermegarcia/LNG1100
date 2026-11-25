@@ -32,7 +32,7 @@ ggplot(data = v2, aes(x = duree, y = note)) +
   )
 
 # WARN: Veuillez noter que les variables prédictives duree et francophone
-# sont corrélées (c'est un cas de collinéarité). Cela peut poser des problèmes
+# sont corrélées (c'est un cas de colinéarité). Cela peut poser des problèmes
 # au modèle, vu qu'il essaie d'estimer l'effet de chaque variable de façon
 # isolée (orthogonale).
 
@@ -74,15 +74,15 @@ anova(fit_1, fit_2)
 # On a exécuté trois modèles statistiques, dont deux considérait duree aussi.
 # Le modèle A considérait "ville" comme variable prédictive.
 # Dans ce modèle, Québec avait un effet significatif
-# (beta = 8.55, IC 95 % = [1,43 15,68], p < 0,05)
+# (β̂ = 8.55, IC 95 % = [1,43 15,68], p < 0,05)
 # par rapport à l'intercept du modèle (Calgary).
 # Toutefois, lorsqu'on a remplacé "ville" par "francophone" (c'est-à-dire une
-# simplification), l'effet est disparu pour francophone = 1 (beta = 3,43,
+# simplification), l'effet est disparu pour francophone = 1 (β̂ = 3,43,
 # IC à 95 % = [-1,78 8,66], p = 0,196). Le coefficient de détermination du modèle
 # en question est de 0,035. Autrement dit, le modèle n'explique que
 # 3,5 % de la variation dans les données examinées.
 # Finalement, le modèle C enlève la variable duree et nous montre un effet
-# significatif de francophone : beta = 4,87, CI 95 % = [1,19 8,55], p < 0,01. Ce modèle n'est pas
+# significatif de francophone : β̂ = 4,87, CI 95 % = [1,19 8,55], p < 0,01. Ce modèle n'est pas
 # statistiquement différent du modèle B, donc la variable duree peut être
 # enlévée du modèle.
 # En conclusion, la simplification de la variable linguistique
