@@ -84,7 +84,7 @@ anova(fit_1, fit_2)
 # Finalement, le modèle C enlève la variable duree et nous montre un effet
 # significatif de francophone : β̂ = 4,87, CI 95 % = [1,19 8,55], p < 0,01. Ce modèle n'est pas
 # statistiquement différent du modèle B, donc la variable duree peut être
-# enlévée du modèle.
+# enlevée du modèle.
 # En conclusion, la simplification de la variable linguistique
 # a eu un effet négatif sur nos résultats. Toutefois, on est capable de trouver
 # un effet de francophone lorsqu'on enlève la variable duree de notre modèle.
